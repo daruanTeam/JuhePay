@@ -1,0 +1,856 @@
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:01:40,779 INFO [main][:] - using logger: org.apache.dubbo.common.logger.slf4j.Slf4jLoggerAdapter
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:01:40,790 INFO [main][WelcomeLogoApplicationListener.java:63] - 
+
+ :: Dubbo Spring Boot (v2.7.1) : https://github.com/apache/incubator-dubbo-spring-boot-project
+ :: Dubbo (v2.7.3) : https://github.com/apache/incubator-dubbo
+ :: Discuss group : dev@dubbo.apache.org
+
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:01:40,794 INFO [main][OverrideDubboConfigApplicationListener.java:68] - Dubbo Config was overridden by externalized configuration {dubbo.application.name=merchant-service, dubbo.application.qos-enable=false, dubbo.application.qos.port=22240, dubbo.config.multiple=true, dubbo.consumer.check=false, dubbo.consumer.retries=-1, dubbo.consumer.timeout=90000, dubbo.protocol.name=dubbo, dubbo.protocol.port=20890, dubbo.registry.address=nacos://192.168.49.1:8848, dubbo.scan.base-packages=com.shanjupay}
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:01:41,076 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$5a77094e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:01:41,135 INFO [pool-3-thread-1][AwaitingNonWebApplicationListener.java:140] -  [Dubbo] Current Spring Boot Application is await...
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:01:41,512 INFO [main][OverrideDubboConfigApplicationListener.java:68] - Dubbo Config was overridden by externalized configuration {dubbo.application.name=merchant-service, dubbo.application.qos-enable=false, dubbo.application.qos.port=22240, dubbo.config.multiple=true, dubbo.consumer.check=false, dubbo.consumer.retries=-1, dubbo.consumer.timeout=90000, dubbo.protocol.name=dubbo, dubbo.protocol.port=20890, dubbo.registry.address=nacos://192.168.49.1:8848, dubbo.scan.base-packages=com.shanjupay}
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:01:41,607 INFO [main][NacosPropertySourceBuilder.java:87] - Loading nacos data, dataId: 'spring-boot-http.yaml', group: 'COMMON_GROUP'
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:01:41,613 INFO [main][NacosPropertySourceBuilder.java:87] - Loading nacos data, dataId: 'spring-boot-starter-druid.yaml', group: 'COMMON_GROUP'
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:01:41,618 INFO [main][NacosPropertySourceBuilder.java:87] - Loading nacos data, dataId: 'spring-boot-mybatis-plus.yaml', group: 'COMMON_GROUP'
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:01:41,622 INFO [main][NacosPropertySourceBuilder.java:87] - Loading nacos data, dataId: 'merchant-service.yaml', group: 'SHANJUPAY_GROUP'
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:01:41,623 INFO [main][PropertySourceBootstrapConfiguration.java:98] - Located property source: CompositePropertySource {name='NACOS', propertySources=[NacosPropertySource {name='merchant-service.yaml'}, NacosPropertySource {name='spring-boot-mybatis-plus.yaml'}, NacosPropertySource {name='spring-boot-starter-druid.yaml'}, NacosPropertySource {name='spring-boot-http.yaml'}]}
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:01:41,641 INFO [main][SpringApplication.java:675] - No active profile set, falling back to default profiles: default
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:01:42,262 WARN [main][EndpointId.java:135] - Endpoint ID 'nacos-config' contains invalid characters, please migrate to a valid format.
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:01:42,264 WARN [main][EndpointId.java:135] - Endpoint ID 'nacos-discovery' contains invalid characters, please migrate to a valid format.
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:01:42,284 INFO [main][DubboConfigBindingRegistrar.java:127] - The dubbo config bean definition [name : org.apache.dubbo.config.ApplicationConfig#0, class : org.apache.dubbo.config.ApplicationConfig] has been registered.
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:01:42,285 INFO [main][DubboConfigBindingRegistrar.java:151] - The BeanPostProcessor bean definition [org.apache.dubbo.config.spring.beans.factory.annotation.DubboConfigBindingBeanPostProcessor] for dubbo config bean [name : org.apache.dubbo.config.ApplicationConfig#0] has been registered.
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:01:42,285 INFO [main][DubboConfigBindingRegistrar.java:127] - The dubbo config bean definition [name : org.apache.dubbo.config.RegistryConfig#0, class : org.apache.dubbo.config.RegistryConfig] has been registered.
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:01:42,285 INFO [main][DubboConfigBindingRegistrar.java:151] - The BeanPostProcessor bean definition [org.apache.dubbo.config.spring.beans.factory.annotation.DubboConfigBindingBeanPostProcessor] for dubbo config bean [name : org.apache.dubbo.config.RegistryConfig#0] has been registered.
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:01:42,286 INFO [main][DubboConfigBindingRegistrar.java:127] - The dubbo config bean definition [name : org.apache.dubbo.config.ProtocolConfig#0, class : org.apache.dubbo.config.ProtocolConfig] has been registered.
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:01:42,286 INFO [main][DubboConfigBindingRegistrar.java:151] - The BeanPostProcessor bean definition [org.apache.dubbo.config.spring.beans.factory.annotation.DubboConfigBindingBeanPostProcessor] for dubbo config bean [name : org.apache.dubbo.config.ProtocolConfig#0] has been registered.
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:01:42,286 INFO [main][DubboConfigBindingRegistrar.java:127] - The dubbo config bean definition [name : org.apache.dubbo.config.ConsumerConfig#0, class : org.apache.dubbo.config.ConsumerConfig] has been registered.
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:01:42,286 INFO [main][DubboConfigBindingRegistrar.java:151] - The BeanPostProcessor bean definition [org.apache.dubbo.config.spring.beans.factory.annotation.DubboConfigBindingBeanPostProcessor] for dubbo config bean [name : org.apache.dubbo.config.ConsumerConfig#0] has been registered.
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:01:42,433 WARN [main][EndpointId.java:135] - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:01:42,482 INFO [main][ServiceAnnotationBeanPostProcessor.java:204] -  [DUBBO] BeanNameGenerator bean can't be found in BeanFactory with name [org.springframework.context.annotation.internalConfigurationBeanNameGenerator], dubbo version: 2.7.3, current host: 192.168.49.1
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:01:42,483 INFO [main][ServiceAnnotationBeanPostProcessor.java:206] -  [DUBBO] BeanNameGenerator will be a instance of org.springframework.context.annotation.AnnotationBeanNameGenerator , it maybe a potential problem on bean name generation., dubbo version: 2.7.3, current host: 192.168.49.1
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:01:42,610 INFO [main][ServiceAnnotationBeanPostProcessor.java:284] -  [DUBBO] The BeanDefinition[Root bean: class [org.apache.dubbo.config.spring.ServiceBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] of ServiceBean has been registered with name : ServiceBean:com.shanjupay.merchant.api.AppService, dubbo version: 2.7.3, current host: 192.168.49.1
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:01:42,611 INFO [main][ServiceAnnotationBeanPostProcessor.java:284] -  [DUBBO] The BeanDefinition[Root bean: class [org.apache.dubbo.config.spring.ServiceBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] of ServiceBean has been registered with name : ServiceBean:com.shanjupay.merchant.api.MerchantService, dubbo version: 2.7.3, current host: 192.168.49.1
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:01:42,611 INFO [main][ServiceAnnotationBeanPostProcessor.java:161] -  [DUBBO] 2 annotated Dubbo's @Service Components { [Bean definition with name 'appServiceImpl': Generic bean: class [com.shanjupay.merchant.service.AppServiceImpl]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [F:\ideaproject\JuhePay\shanjupay-merchant\shanjupay-merchant-service\target\classes\com\shanjupay\merchant\service\AppServiceImpl.class], Bean definition with name 'merchantServiceImpl': Generic bean: class [com.shanjupay.merchant.service.MerchantServiceImpl]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [F:\ideaproject\JuhePay\shanjupay-merchant\shanjupay-merchant-service\target\classes\com\shanjupay\merchant\service\MerchantServiceImpl.class]] } were scanned under package[com.shanjupay], dubbo version: 2.7.3, current host: 192.168.49.1
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:01:42,613 INFO [main][ConfigurationClassPostProcessor.java:380] - Cannot enhance @Configuration bean definition 'org.apache.dubbo.spring.boot.autoconfigure.DubboRelaxedBinding2AutoConfiguration' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:01:42,613 INFO [main][ConfigurationClassPostProcessor.java:380] - Cannot enhance @Configuration bean definition 'org.apache.dubbo.spring.boot.autoconfigure.DubboAutoConfiguration' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:01:42,710 INFO [main][GenericScope.java:294] - BeanFactory id=ce7c3144-98ff-3e64-a64f-3ed3b2345b00
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:01:42,745 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'com.alibaba.druid.spring.boot.autoconfigure.stat.DruidSpringAopConfiguration' of type [com.alibaba.druid.spring.boot.autoconfigure.stat.DruidSpringAopConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:01:42,852 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$3e5d0651] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:01:42,991 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'spring.datasource.druid-com.alibaba.druid.spring.boot.autoconfigure.properties.DruidStatProperties' of type [com.alibaba.druid.spring.boot.autoconfigure.properties.DruidStatProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:01:43,000 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'advisor' of type [org.springframework.aop.support.RegexpMethodPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:01:43,003 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'com.alibaba.cloud.dubbo.autoconfigure.DubboOpenFeignAutoConfiguration' of type [com.alibaba.cloud.dubbo.autoconfigure.DubboOpenFeignAutoConfiguration$$EnhancerBySpringCGLIB$$c21e5555] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:01:43,016 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'dubbo.cloud-com.alibaba.cloud.dubbo.env.DubboCloudProperties' of type [com.alibaba.cloud.dubbo.env.DubboCloudProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:01:43,026 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'metadataJsonResolver' of type [com.alibaba.cloud.dubbo.metadata.resolver.DubboServiceBeanMetadataResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:01:43,035 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.apache.dubbo.config.ApplicationConfig#0' of type [org.apache.dubbo.config.ApplicationConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:01:43,039 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'dubboProtocolConfigSupplier' of type [com.alibaba.cloud.dubbo.metadata.DubboProtocolConfigSupplier] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:01:43,040 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'com.alibaba.cloud.dubbo.service.DubboMetadataServiceExporter' of type [com.alibaba.cloud.dubbo.service.DubboMetadataServiceExporter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:01:43,041 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'com.alibaba.cloud.dubbo.autoconfigure.DubboMetadataAutoConfiguration' of type [com.alibaba.cloud.dubbo.autoconfigure.DubboMetadataAutoConfiguration$$EnhancerBySpringCGLIB$$345df1cf] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:01:43,044 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'com.alibaba.cloud.dubbo.autoconfigure.DubboServiceAutoConfiguration' of type [com.alibaba.cloud.dubbo.autoconfigure.DubboServiceAutoConfiguration$$EnhancerBySpringCGLIB$$c707fa27] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:01:43,050 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'dubboGenericServiceFactory' of type [com.alibaba.cloud.dubbo.service.DubboGenericServiceFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:01:43,052 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'dubboMetadataConfigServiceProxy' of type [com.alibaba.cloud.dubbo.service.DubboMetadataServiceProxy] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:01:43,056 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.cloud.client.discovery.composite.CompositeDiscoveryClientAutoConfiguration' of type [org.springframework.cloud.client.discovery.composite.CompositeDiscoveryClientAutoConfiguration$$EnhancerBySpringCGLIB$$874d33e1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:01:43,061 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'com.alibaba.cloud.nacos.discovery.NacosDiscoveryClientAutoConfiguration' of type [com.alibaba.cloud.nacos.discovery.NacosDiscoveryClientAutoConfiguration$$EnhancerBySpringCGLIB$$7b183ca6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:01:43,070 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.cloud.commons.util.UtilAutoConfiguration' of type [org.springframework.cloud.commons.util.UtilAutoConfiguration$$EnhancerBySpringCGLIB$$60acfd5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:01:43,075 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'inetUtilsProperties' of type [org.springframework.cloud.commons.util.InetUtilsProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:01:43,077 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'inetUtils' of type [org.springframework.cloud.commons.util.InetUtils] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:01:43,424 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'nacosProperties' of type [com.alibaba.cloud.nacos.NacosDiscoveryProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:01:43,429 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'nacosDiscoveryClient' of type [com.alibaba.cloud.nacos.discovery.NacosDiscoveryClient] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:01:43,443 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'server-org.springframework.boot.autoconfigure.web.ServerProperties' of type [org.springframework.boot.autoconfigure.web.ServerProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:01:43,446 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.cloud.client.discovery.simple.SimpleDiscoveryClientAutoConfiguration' of type [org.springframework.cloud.client.discovery.simple.SimpleDiscoveryClientAutoConfiguration$$EnhancerBySpringCGLIB$$537bccaf] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:01:43,786 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'simpleDiscoveryProperties' of type [org.springframework.cloud.client.discovery.simple.SimpleDiscoveryProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:01:43,788 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'simpleDiscoveryClient' of type [org.springframework.cloud.client.discovery.simple.SimpleDiscoveryClient] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:01:43,791 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'compositeDiscoveryClient' of type [org.springframework.cloud.client.discovery.composite.CompositeDiscoveryClient] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:01:43,794 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'com.alibaba.cloud.dubbo.util.JSONUtils' of type [com.alibaba.cloud.dubbo.util.JSONUtils] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:01:43,864 WARN [main][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:1) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:01:43,865 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'com.alibaba.cloud.dubbo.metadata.repository.DubboServiceMetadataRepository' of type [com.alibaba.cloud.dubbo.metadata.repository.DubboServiceMetadataRepository] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:01:43,890 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'com.alibaba.cloud.dubbo.service.parameter.RequestParamServiceParameterResolver' of type [com.alibaba.cloud.dubbo.service.parameter.RequestParamServiceParameterResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:01:43,903 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'spring.http-org.springframework.boot.autoconfigure.http.HttpProperties' of type [org.springframework.boot.autoconfigure.http.HttpProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:01:43,906 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.boot.autoconfigure.http.HttpMessageConvertersAutoConfiguration$StringHttpMessageConverterConfiguration' of type [org.springframework.boot.autoconfigure.http.HttpMessageConvertersAutoConfiguration$StringHttpMessageConverterConfiguration$$EnhancerBySpringCGLIB$$8b9e9885] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:01:43,913 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'stringHttpMessageConverter' of type [org.springframework.http.converter.StringHttpMessageConverter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:01:43,917 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.boot.autoconfigure.http.JacksonHttpMessageConvertersConfiguration$MappingJackson2HttpMessageConverterConfiguration' of type [org.springframework.boot.autoconfigure.http.JacksonHttpMessageConvertersConfiguration$MappingJackson2HttpMessageConverterConfiguration$$EnhancerBySpringCGLIB$$c5749485] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:01:43,922 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperConfiguration$$EnhancerBySpringCGLIB$$99f085e2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:01:43,928 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperBuilderConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperBuilderConfiguration$$EnhancerBySpringCGLIB$$4c3d47fb] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:01:43,932 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$Jackson2ObjectMapperBuilderCustomizerConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$Jackson2ObjectMapperBuilderCustomizerConfiguration$$EnhancerBySpringCGLIB$$7542dea] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:01:43,938 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'spring.jackson-org.springframework.boot.autoconfigure.jackson.JacksonProperties' of type [org.springframework.boot.autoconfigure.jackson.JacksonProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:01:43,941 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'standardJacksonObjectMapperBuilderCustomizer' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$Jackson2ObjectMapperBuilderCustomizerConfiguration$StandardJackson2ObjectMapperBuilderCustomizer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:01:43,947 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$ParameterNamesModuleConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$ParameterNamesModuleConfiguration$$EnhancerBySpringCGLIB$$2e1fa518] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:01:43,957 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'parameterNamesModule' of type [com.fasterxml.jackson.module.paramnames.ParameterNamesModule] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:01:43,961 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$$EnhancerBySpringCGLIB$$7bfc2371] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:01:43,969 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'jsonComponentModule' of type [org.springframework.boot.jackson.JsonComponentModule] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:01:43,972 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'jacksonObjectMapperBuilder' of type [org.springframework.http.converter.json.Jackson2ObjectMapperBuilder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:01:43,991 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'jacksonObjectMapper' of type [com.fasterxml.jackson.databind.ObjectMapper] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:01:44,000 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'mappingJackson2HttpMessageConverter' of type [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:01:44,005 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.boot.autoconfigure.http.HttpMessageConvertersAutoConfiguration' of type [org.springframework.boot.autoconfigure.http.HttpMessageConvertersAutoConfiguration$$EnhancerBySpringCGLIB$$5890d1e5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:01:44,011 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'messageConverters' of type [org.springframework.boot.autoconfigure.http.HttpMessageConverters] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:01:44,014 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'com.alibaba.cloud.dubbo.service.parameter.RequestBodyServiceParameterResolver' of type [com.alibaba.cloud.dubbo.service.parameter.RequestBodyServiceParameterResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:01:44,020 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'com.alibaba.cloud.dubbo.service.parameter.RequestHeaderServiceParameterResolver' of type [com.alibaba.cloud.dubbo.service.parameter.RequestHeaderServiceParameterResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:01:44,026 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'com.alibaba.cloud.dubbo.service.parameter.PathVariableServiceParameterResolver' of type [com.alibaba.cloud.dubbo.service.parameter.PathVariableServiceParameterResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:01:44,027 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'com.alibaba.cloud.dubbo.service.DubboGenericServiceExecutionContextFactory' of type [com.alibaba.cloud.dubbo.service.DubboGenericServiceExecutionContextFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:01:44,038 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'relaxedDubboConfigBinder' of type [org.apache.dubbo.spring.boot.autoconfigure.BinderDubboConfigBinder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:01:44,044 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'relaxedDubboConfigBinder' of type [org.apache.dubbo.spring.boot.autoconfigure.BinderDubboConfigBinder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:01:44,047 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'relaxedDubboConfigBinder' of type [org.apache.dubbo.spring.boot.autoconfigure.BinderDubboConfigBinder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:01:44,050 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'relaxedDubboConfigBinder' of type [org.apache.dubbo.spring.boot.autoconfigure.BinderDubboConfigBinder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:01:44,057 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$5a77094e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:01:44,355 INFO [main][TomcatWebServer.java:90] - Tomcat initialized with port(s): 56040 (http)
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:01:44,369 INFO [main][DirectJDKLog.java:173] - Initializing ProtocolHandler ["http-nio-56040"]
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:01:44,376 INFO [main][DirectJDKLog.java:173] - Starting service [Tomcat]
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:01:44,376 INFO [main][DirectJDKLog.java:173] - Starting Servlet engine: [Apache Tomcat/9.0.16]
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:01:44,381 INFO [main][DirectJDKLog.java:173] - Loaded APR based Apache Tomcat Native library [1.2.31] using APR version [1.7.0].
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:01:44,382 INFO [main][DirectJDKLog.java:173] - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:01:44,382 INFO [main][DirectJDKLog.java:173] - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:01:44,385 INFO [main][DirectJDKLog.java:173] - OpenSSL successfully initialized [OpenSSL 1.1.1l  24 Aug 2021]
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:01:44,520 INFO [main][DirectJDKLog.java:173] - Initializing Spring embedded WebApplicationContext
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:01:44,520 INFO [main][ServletWebServerApplicationContext.java:296] - Root WebApplicationContext: initialization completed in 2872 ms
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:01:44,871 INFO [main][DruidDataSourceAutoConfigure.java:56] - Init DruidDataSource
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:01:45,099 INFO [main][DruidDataSource.java:1002] - {dataSource-1} inited
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:01:45,959 WARN [main][URLConfigurationSource.java:121] - No URLs will be polled as dynamic configuration sources.
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:01:45,959 INFO [main][URLConfigurationSource.java:122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:01:45,964 WARN [main][URLConfigurationSource.java:121] - No URLs will be polled as dynamic configuration sources.
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:01:45,965 INFO [main][URLConfigurationSource.java:122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:01:46,123 INFO [main][ExecutorConfigurationSupport.java:171] - Initializing ExecutorService 'applicationTaskExecutor'
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:01:46,391 INFO [main][ExecutorConfigurationSupport.java:171] - Initializing ExecutorService
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:01:46,415 INFO [main][DubboConfigBindingBeanPostProcessor.java:109] - The properties of bean [name : org.apache.dubbo.config.RegistryConfig#0] have been binding by prefix of configuration properties : dubbo.registry
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:01:46,421 INFO [main][DubboConfigBindingBeanPostProcessor.java:109] - The properties of bean [name : org.apache.dubbo.config.ProtocolConfig#0] have been binding by prefix of configuration properties : dubbo.protocol
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:01:46,433 INFO [main][DubboConfigBindingBeanPostProcessor.java:109] - The properties of bean [name : org.apache.dubbo.config.ConsumerConfig#0] have been binding by prefix of configuration properties : dubbo.consumer
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:01:46,828 INFO [main][EndpointLinksResolver.java:59] - Exposing 4 endpoint(s) beneath base path '/actuator'
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:01:47,005 INFO [main][AnnotatedInterfaceConfigBeanBuilder.java:84] - The configBean[type:ReferenceBean] has been built.
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:01:47,017 WARN [main][AbstractInterfaceConfig.java:265] -  [DUBBO] There's no valid metadata config found, if you are using the simplified mode of registry url, please make sure you have a metadata address configured properly., dubbo version: 2.7.3, current host: 192.168.49.1
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:01:47,050 INFO [main][AbstractInterfaceConfig.java:237] -  [DUBBO] There's no valid monitor config found, if you want to open monitor statistics for Dubbo, please make sure your monitor is configured properly., dubbo version: 2.7.3, current host: 192.168.49.1
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:01:47,051 INFO [main][AbstractInterfaceConfig.java:237] -  [DUBBO] There's no valid monitor config found, if you want to open monitor statistics for Dubbo, please make sure your monitor is configured properly., dubbo version: 2.7.3, current host: 192.168.49.1
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:01:47,070 INFO [main][QosProtocolWrapper.java:89] -  [DUBBO] qos won't be started because it is disabled. Please check dubbo.application.qos.enable is configured either in system property, dubbo.properties or XML/spring-boot configuration., dubbo version: 2.7.3, current host: 192.168.49.1
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:01:47,070 WARN [main][SpringExtensionFactory.java:86] -  [DUBBO] No spring extension (bean) named:applicationContext, try to find an extension (bean) of type org.springframework.context.ConfigurableApplicationContext, dubbo version: 2.7.3, current host: 192.168.49.1
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:01:47,071 WARN [main][SpringExtensionFactory.java:104] -  [DUBBO] No spring extension (bean) named:applicationContext, type:org.springframework.context.ConfigurableApplicationContext found, stop get bean., dubbo version: 2.7.3, current host: 192.168.49.1
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:01:47,091 INFO [main][AbstractRegistry.java:280] -  [DUBBO] Register: consumer://192.168.49.1/com.shanjupay.user.api.TenantService?application=merchant-service&category=consumers&check=false&dubbo=2.0.2&interface=com.shanjupay.user.api.TenantService&lazy=false&methods=modifyBundle,getTenantByAccount,getAccountByUsername,createBundle,initBundle,login,isExistAccountByUsername,getBundle,unbindTenant,removeTenant,queryTenants,queryBundleByTenantType,getAccountByMobile,queryAccount,getApplicationDTOByClientId,changeBundle,isExistAccountInTenantByUsername,createAccountInTenant,authentication,queryAccountRole,queryAccountInTenant,isExistAccountByMobile,sendMessage,createTenantRelateAccount,createAccount,queryAllBundle,getTenant,queryAdministratorByPage,isExistAccountInTenantByMobile,createTenantAndAccount,accountPassword,bindTenant&pid=11336&qos.enable=false&qos.port=22240&release=2.7.3&retries=-1&side=consumer&sticky=false&timeout=90000&timestamp=1663495307017, dubbo version: 2.7.3, current host: 192.168.49.1
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:01:47,096 INFO [main][AbstractRegistry.java:305] -  [DUBBO] Subscribe: consumer://192.168.49.1/com.shanjupay.user.api.TenantService?application=merchant-service&category=providers,configurators,routers&check=false&dubbo=2.0.2&interface=com.shanjupay.user.api.TenantService&lazy=false&methods=modifyBundle,getTenantByAccount,getAccountByUsername,createBundle,initBundle,login,isExistAccountByUsername,getBundle,unbindTenant,removeTenant,queryTenants,queryBundleByTenantType,getAccountByMobile,queryAccount,getApplicationDTOByClientId,changeBundle,isExistAccountInTenantByUsername,createAccountInTenant,authentication,queryAccountRole,queryAccountInTenant,isExistAccountByMobile,sendMessage,createTenantRelateAccount,createAccount,queryAllBundle,getTenant,queryAdministratorByPage,isExistAccountInTenantByMobile,createTenantAndAccount,accountPassword,bindTenant&pid=11336&qos.enable=false&qos.port=22240&release=2.7.3&retries=-1&side=consumer&sticky=false&timeout=90000&timestamp=1663495307017, dubbo version: 2.7.3, current host: 192.168.49.1
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:01:47,106 INFO [main][AbstractRegistry.java:280] -  [DUBBO] Register: consumer://192.168.49.1/com.shanjupay.user.api.TenantService?application=merchant-service&category=consumers&check=false&dubbo=2.0.2&interface=com.shanjupay.user.api.TenantService&lazy=false&methods=modifyBundle,getTenantByAccount,getAccountByUsername,createBundle,initBundle,login,isExistAccountByUsername,getBundle,unbindTenant,removeTenant,queryTenants,queryBundleByTenantType,getAccountByMobile,queryAccount,getApplicationDTOByClientId,changeBundle,isExistAccountInTenantByUsername,createAccountInTenant,authentication,queryAccountRole,queryAccountInTenant,isExistAccountByMobile,sendMessage,createTenantRelateAccount,createAccount,queryAllBundle,getTenant,queryAdministratorByPage,isExistAccountInTenantByMobile,createTenantAndAccount,accountPassword,bindTenant&pid=11336&qos.enable=false&qos.port=22240&release=2.7.3&retries=-1&side=consumer&sticky=false&timeout=90000&timestamp=1663495307017, dubbo version: 2.7.3, current host: 192.168.49.1
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:01:47,116 INFO [main][AbstractRegistry.java:305] -  [DUBBO] Subscribe: consumer://192.168.49.1/com.shanjupay.user.api.TenantService?application=merchant-service&category=providers,configurators,routers&check=false&dubbo=2.0.2&interface=com.shanjupay.user.api.TenantService&lazy=false&methods=modifyBundle,getTenantByAccount,getAccountByUsername,createBundle,initBundle,login,isExistAccountByUsername,getBundle,unbindTenant,removeTenant,queryTenants,queryBundleByTenantType,getAccountByMobile,queryAccount,getApplicationDTOByClientId,changeBundle,isExistAccountInTenantByUsername,createAccountInTenant,authentication,queryAccountRole,queryAccountInTenant,isExistAccountByMobile,sendMessage,createTenantRelateAccount,createAccount,queryAllBundle,getTenant,queryAdministratorByPage,isExistAccountInTenantByMobile,createTenantAndAccount,accountPassword,bindTenant&pid=11336&qos.enable=false&qos.port=22240&release=2.7.3&retries=-1&side=consumer&sticky=false&timeout=90000&timestamp=1663495307017, dubbo version: 2.7.3, current host: 192.168.49.1
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:01:47,129 WARN [main][AbstractRegistry.java:395] -  [DUBBO] Ignore empty notify urls for subscribe url consumer://192.168.49.1/com.shanjupay.user.api.TenantService?application=merchant-service&category=providers,configurators,routers&check=false&dubbo=2.0.2&interface=com.shanjupay.user.api.TenantService&lazy=false&methods=modifyBundle,getTenantByAccount,getAccountByUsername,createBundle,initBundle,login,isExistAccountByUsername,getBundle,unbindTenant,removeTenant,queryTenants,queryBundleByTenantType,getAccountByMobile,queryAccount,getApplicationDTOByClientId,changeBundle,isExistAccountInTenantByUsername,createAccountInTenant,authentication,queryAccountRole,queryAccountInTenant,isExistAccountByMobile,sendMessage,createTenantRelateAccount,createAccount,queryAllBundle,getTenant,queryAdministratorByPage,isExistAccountInTenantByMobile,createTenantAndAccount,accountPassword,bindTenant&pid=11336&qos.enable=false&qos.port=22240&release=2.7.3&retries=-1&side=consumer&sticky=false&timeout=90000&timestamp=1663495307017, dubbo version: 2.7.3, current host: 192.168.49.1
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:01:47,131 WARN [com.alibaba.nacos.naming.client.listener][AbstractRegistry.java:395] -  [DUBBO] Ignore empty notify urls for subscribe url consumer://192.168.49.1/com.shanjupay.user.api.TenantService?application=merchant-service&category=providers,configurators,routers&check=false&dubbo=2.0.2&interface=com.shanjupay.user.api.TenantService&lazy=false&methods=modifyBundle,getTenantByAccount,getAccountByUsername,createBundle,initBundle,login,isExistAccountByUsername,getBundle,unbindTenant,removeTenant,queryTenants,queryBundleByTenantType,getAccountByMobile,queryAccount,getApplicationDTOByClientId,changeBundle,isExistAccountInTenantByUsername,createAccountInTenant,authentication,queryAccountRole,queryAccountInTenant,isExistAccountByMobile,sendMessage,createTenantRelateAccount,createAccount,queryAllBundle,getTenant,queryAdministratorByPage,isExistAccountInTenantByMobile,createTenantAndAccount,accountPassword,bindTenant&pid=11336&qos.enable=false&qos.port=22240&release=2.7.3&retries=-1&side=consumer&sticky=false&timeout=90000&timestamp=1663495307017, dubbo version: 2.7.3, current host: 192.168.49.1
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:01:47,132 INFO [main][ReferenceConfig.java:421] -  [DUBBO] Refer dubbo service com.shanjupay.user.api.TenantService from url registry://192.168.49.1:8848/org.apache.dubbo.registry.RegistryService?application=merchant-service&check=false&cluster=registryaware&dubbo=2.0.2&interface=com.shanjupay.user.api.TenantService&lazy=false&methods=modifyBundle,getTenantByAccount,getAccountByUsername,createBundle,initBundle,login,isExistAccountByUsername,getBundle,unbindTenant,removeTenant,queryTenants,queryBundleByTenantType,getAccountByMobile,queryAccount,getApplicationDTOByClientId,changeBundle,isExistAccountInTenantByUsername,createAccountInTenant,authentication,queryAccountRole,queryAccountInTenant,isExistAccountByMobile,sendMessage,createTenantRelateAccount,createAccount,queryAllBundle,getTenant,queryAdministratorByPage,isExistAccountInTenantByMobile,createTenantAndAccount,accountPassword,bindTenant&pid=11336&qos.enable=false&qos.port=22240&refer=application%3Dmerchant-service%26check%3Dfalse%26dubbo%3D2.0.2%26interface%3Dcom.shanjupay.user.api.TenantService%26lazy%3Dfalse%26methods%3DmodifyBundle%2CgetTenantByAccount%2CgetAccountByUsername%2CcreateBundle%2CinitBundle%2Clogin%2CisExistAccountByUsername%2CgetBundle%2CunbindTenant%2CremoveTenant%2CqueryTenants%2CqueryBundleByTenantType%2CgetAccountByMobile%2CqueryAccount%2CgetApplicationDTOByClientId%2CchangeBundle%2CisExistAccountInTenantByUsername%2CcreateAccountInTenant%2Cauthentication%2CqueryAccountRole%2CqueryAccountInTenant%2CisExistAccountByMobile%2CsendMessage%2CcreateTenantRelateAccount%2CcreateAccount%2CqueryAllBundle%2CgetTenant%2CqueryAdministratorByPage%2CisExistAccountInTenantByMobile%2CcreateTenantAndAccount%2CaccountPassword%2CbindTenant%26pid%3D11336%26qos.enable%3Dfalse%26qos.port%3D22240%26register.ip%3D192.168.49.1%26release%3D2.7.3%26retries%3D-1%26side%3Dconsumer%26sticky%3Dfalse%26timeout%3D90000%26timestamp%3D1663495307017&register.ip=192.168.49.1&registry=nacos&release=2.7.3&retries=-1&side=consumer&sticky=false&timeout=90000&timestamp=1663495307017, dubbo version: 2.7.3, current host: 192.168.49.1
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:01:47,203 INFO [main][DubboServiceMetadataRepository.java:262] - The metadata of Dubbo services has been initialized
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:01:47,258 WARN [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:1) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:01:47,264 INFO [main][ServiceBean.java:112] -  [DUBBO] The service ready on spring started. service: com.shanjupay.merchant.api.AppService, dubbo version: 2.7.3, current host: 192.168.49.1
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:01:47,276 WARN [main][AbstractInterfaceConfig.java:265] -  [DUBBO] There's no valid metadata config found, if you are using the simplified mode of registry url, please make sure you have a metadata address configured properly., dubbo version: 2.7.3, current host: 192.168.49.1
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:01:47,345 INFO [main][ServiceConfig.java:643] -  [DUBBO] Export dubbo service com.shanjupay.merchant.api.AppService to local registry url : injvm://127.0.0.1/com.shanjupay.merchant.api.AppService?anyhost=true&application=merchant-service&bean.name=ServiceBean:com.shanjupay.merchant.api.AppService&bind.ip=192.168.49.1&bind.port=20890&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&interface=com.shanjupay.merchant.api.AppService&methods=queryAppByMerchant,queryAppInMerchant,createApp,getAppById&pid=11336&qos.enable=false&qos.port=22240&register=true&release=2.7.3&side=provider&timestamp=1663495307278, dubbo version: 2.7.3, current host: 192.168.49.1
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:01:47,345 INFO [main][ServiceConfig.java:581] -  [DUBBO] Export dubbo service com.shanjupay.merchant.api.AppService to url dubbo://192.168.49.1:20890/com.shanjupay.merchant.api.AppService?anyhost=true&application=merchant-service&bean.name=ServiceBean:com.shanjupay.merchant.api.AppService&bind.ip=192.168.49.1&bind.port=20890&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&interface=com.shanjupay.merchant.api.AppService&methods=queryAppByMerchant,queryAppInMerchant,createApp,getAppById&pid=11336&qos.enable=false&qos.port=22240&register=true&release=2.7.3&side=provider&timestamp=1663495307278, dubbo version: 2.7.3, current host: 192.168.49.1
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:01:47,345 INFO [main][AbstractInterfaceConfig.java:237] -  [DUBBO] There's no valid monitor config found, if you want to open monitor statistics for Dubbo, please make sure your monitor is configured properly., dubbo version: 2.7.3, current host: 192.168.49.1
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:01:47,363 INFO [main][ServiceConfig.java:595] -  [DUBBO] Register dubbo service com.shanjupay.merchant.api.AppService url dubbo://192.168.49.1:20890/com.shanjupay.merchant.api.AppService?anyhost=true&application=merchant-service&bean.name=ServiceBean:com.shanjupay.merchant.api.AppService&bind.ip=192.168.49.1&bind.port=20890&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&interface=com.shanjupay.merchant.api.AppService&methods=queryAppByMerchant,queryAppInMerchant,createApp,getAppById&pid=11336&qos.enable=false&qos.port=22240&register=true&release=2.7.3&side=provider&timestamp=1663495307278 to registry registry://localhost:9090/org.apache.dubbo.registry.RegistryService?application=merchant-service&dubbo=2.0.2&pid=11336&qos.enable=false&qos.port=22240&registry=spring-cloud&release=2.7.3&timestamp=1663495307277, dubbo version: 2.7.3, current host: 192.168.49.1
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:01:48,159 INFO [main][AbstractServer.java:73] -  [DUBBO] Start NettyServer bind /0.0.0.0:20890, export /192.168.49.1:20890, dubbo version: 2.7.3, current host: 192.168.49.1
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:01:48,164 INFO [main][AbstractRegistry.java:280] -  [DUBBO] Register: dubbo://192.168.49.1:20890/com.shanjupay.merchant.api.AppService?anyhost=true&application=merchant-service&bean.name=ServiceBean:com.shanjupay.merchant.api.AppService&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&interface=com.shanjupay.merchant.api.AppService&methods=queryAppByMerchant,queryAppInMerchant,createApp,getAppById&pid=11336&register=true&release=2.7.3&side=provider&timestamp=1663495307278, dubbo version: 2.7.3, current host: 192.168.49.1
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:01:48,504 INFO [main][AbstractRegistry.java:305] -  [DUBBO] Subscribe: provider://192.168.49.1:20890/com.shanjupay.merchant.api.AppService?anyhost=true&application=merchant-service&bean.name=ServiceBean:com.shanjupay.merchant.api.AppService&bind.ip=192.168.49.1&bind.port=20890&category=configurators&check=false&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&interface=com.shanjupay.merchant.api.AppService&methods=queryAppByMerchant,queryAppInMerchant,createApp,getAppById&pid=11336&qos.enable=false&qos.port=22240&register=true&release=2.7.3&side=provider&timestamp=1663495307278, dubbo version: 2.7.3, current host: 192.168.49.1
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:01:48,505 INFO [main][AbstractInterfaceConfig.java:237] -  [DUBBO] There's no valid monitor config found, if you want to open monitor statistics for Dubbo, please make sure your monitor is configured properly., dubbo version: 2.7.3, current host: 192.168.49.1
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:01:48,506 INFO [main][ServiceConfig.java:595] -  [DUBBO] Register dubbo service com.shanjupay.merchant.api.AppService url dubbo://192.168.49.1:20890/com.shanjupay.merchant.api.AppService?anyhost=true&application=merchant-service&bean.name=ServiceBean:com.shanjupay.merchant.api.AppService&bind.ip=192.168.49.1&bind.port=20890&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&interface=com.shanjupay.merchant.api.AppService&methods=queryAppByMerchant,queryAppInMerchant,createApp,getAppById&pid=11336&qos.enable=false&qos.port=22240&register=true&release=2.7.3&side=provider&timestamp=1663495307278 to registry registry://192.168.49.1:8848/org.apache.dubbo.registry.RegistryService?application=merchant-service&dubbo=2.0.2&pid=11336&qos.enable=false&qos.port=22240&registry=nacos&release=2.7.3&timestamp=1663495307277, dubbo version: 2.7.3, current host: 192.168.49.1
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:01:48,507 INFO [main][AbstractRegistry.java:280] -  [DUBBO] Register: dubbo://192.168.49.1:20890/com.shanjupay.merchant.api.AppService?anyhost=true&application=merchant-service&bean.name=ServiceBean:com.shanjupay.merchant.api.AppService&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&interface=com.shanjupay.merchant.api.AppService&methods=queryAppByMerchant,queryAppInMerchant,createApp,getAppById&pid=11336&register=true&release=2.7.3&side=provider&timestamp=1663495307278, dubbo version: 2.7.3, current host: 192.168.49.1
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:01:48,510 INFO [main][AbstractRegistry.java:305] -  [DUBBO] Subscribe: provider://192.168.49.1:20890/com.shanjupay.merchant.api.AppService?anyhost=true&application=merchant-service&bean.name=ServiceBean:com.shanjupay.merchant.api.AppService&bind.ip=192.168.49.1&bind.port=20890&category=configurators&check=false&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&interface=com.shanjupay.merchant.api.AppService&methods=queryAppByMerchant,queryAppInMerchant,createApp,getAppById&pid=11336&qos.enable=false&qos.port=22240&register=true&release=2.7.3&side=provider&timestamp=1663495307278, dubbo version: 2.7.3, current host: 192.168.49.1
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:01:48,520 WARN [main][AbstractRegistry.java:395] -  [DUBBO] Ignore empty notify urls for subscribe url provider://192.168.49.1:20890/com.shanjupay.merchant.api.AppService?anyhost=true&application=merchant-service&bean.name=ServiceBean:com.shanjupay.merchant.api.AppService&bind.ip=192.168.49.1&bind.port=20890&category=configurators&check=false&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&interface=com.shanjupay.merchant.api.AppService&methods=queryAppByMerchant,queryAppInMerchant,createApp,getAppById&pid=11336&qos.enable=false&qos.port=22240&register=true&release=2.7.3&side=provider&timestamp=1663495307278, dubbo version: 2.7.3, current host: 192.168.49.1
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:01:48,520 WARN [com.alibaba.nacos.naming.client.listener][AbstractRegistry.java:395] -  [DUBBO] Ignore empty notify urls for subscribe url provider://192.168.49.1:20890/com.shanjupay.merchant.api.AppService?anyhost=true&application=merchant-service&bean.name=ServiceBean:com.shanjupay.merchant.api.AppService&bind.ip=192.168.49.1&bind.port=20890&category=configurators&check=false&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&interface=com.shanjupay.merchant.api.AppService&methods=queryAppByMerchant,queryAppInMerchant,createApp,getAppById&pid=11336&qos.enable=false&qos.port=22240&register=true&release=2.7.3&side=provider&timestamp=1663495307278, dubbo version: 2.7.3, current host: 192.168.49.1
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:01:48,524 INFO [main][ServiceBean.java:112] -  [DUBBO] The service ready on spring started. service: com.shanjupay.merchant.api.MerchantService, dubbo version: 2.7.3, current host: 192.168.49.1
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:01:48,529 WARN [main][AbstractInterfaceConfig.java:265] -  [DUBBO] There's no valid metadata config found, if you are using the simplified mode of registry url, please make sure you have a metadata address configured properly., dubbo version: 2.7.3, current host: 192.168.49.1
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:01:48,534 INFO [main][ServiceConfig.java:643] -  [DUBBO] Export dubbo service com.shanjupay.merchant.api.MerchantService to local registry url : injvm://127.0.0.1/com.shanjupay.merchant.api.MerchantService?anyhost=true&application=merchant-service&bean.name=ServiceBean:com.shanjupay.merchant.api.MerchantService&bind.ip=192.168.49.1&bind.port=20890&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&interface=com.shanjupay.merchant.api.MerchantService&methods=queryStoreByPage,queryMerchantByTenantId,bindStaffToStore,queryStoreInMerchant,queryMerchantById,applyMerchant,createMerchant,createStore,createStaff&pid=11336&qos.enable=false&qos.port=22240&register=true&release=2.7.3&side=provider&timestamp=1663495308530, dubbo version: 2.7.3, current host: 192.168.49.1
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:01:48,535 INFO [main][ServiceConfig.java:581] -  [DUBBO] Export dubbo service com.shanjupay.merchant.api.MerchantService to url dubbo://192.168.49.1:20890/com.shanjupay.merchant.api.MerchantService?anyhost=true&application=merchant-service&bean.name=ServiceBean:com.shanjupay.merchant.api.MerchantService&bind.ip=192.168.49.1&bind.port=20890&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&interface=com.shanjupay.merchant.api.MerchantService&methods=queryStoreByPage,queryMerchantByTenantId,bindStaffToStore,queryStoreInMerchant,queryMerchantById,applyMerchant,createMerchant,createStore,createStaff&pid=11336&qos.enable=false&qos.port=22240&register=true&release=2.7.3&side=provider&timestamp=1663495308530, dubbo version: 2.7.3, current host: 192.168.49.1
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:01:48,535 INFO [main][AbstractInterfaceConfig.java:237] -  [DUBBO] There's no valid monitor config found, if you want to open monitor statistics for Dubbo, please make sure your monitor is configured properly., dubbo version: 2.7.3, current host: 192.168.49.1
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:01:48,535 INFO [main][ServiceConfig.java:595] -  [DUBBO] Register dubbo service com.shanjupay.merchant.api.MerchantService url dubbo://192.168.49.1:20890/com.shanjupay.merchant.api.MerchantService?anyhost=true&application=merchant-service&bean.name=ServiceBean:com.shanjupay.merchant.api.MerchantService&bind.ip=192.168.49.1&bind.port=20890&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&interface=com.shanjupay.merchant.api.MerchantService&methods=queryStoreByPage,queryMerchantByTenantId,bindStaffToStore,queryStoreInMerchant,queryMerchantById,applyMerchant,createMerchant,createStore,createStaff&pid=11336&qos.enable=false&qos.port=22240&register=true&release=2.7.3&side=provider&timestamp=1663495308530 to registry registry://localhost:9090/org.apache.dubbo.registry.RegistryService?application=merchant-service&dubbo=2.0.2&pid=11336&qos.enable=false&qos.port=22240&registry=spring-cloud&release=2.7.3&timestamp=1663495308530, dubbo version: 2.7.3, current host: 192.168.49.1
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:01:48,536 INFO [main][AbstractRegistry.java:280] -  [DUBBO] Register: dubbo://192.168.49.1:20890/com.shanjupay.merchant.api.MerchantService?anyhost=true&application=merchant-service&bean.name=ServiceBean:com.shanjupay.merchant.api.MerchantService&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&interface=com.shanjupay.merchant.api.MerchantService&methods=queryStoreByPage,queryMerchantByTenantId,bindStaffToStore,queryStoreInMerchant,queryMerchantById,applyMerchant,createMerchant,createStore,createStaff&pid=11336&register=true&release=2.7.3&side=provider&timestamp=1663495308530, dubbo version: 2.7.3, current host: 192.168.49.1
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:01:48,877 INFO [main][AbstractRegistry.java:305] -  [DUBBO] Subscribe: provider://192.168.49.1:20890/com.shanjupay.merchant.api.MerchantService?anyhost=true&application=merchant-service&bean.name=ServiceBean:com.shanjupay.merchant.api.MerchantService&bind.ip=192.168.49.1&bind.port=20890&category=configurators&check=false&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&interface=com.shanjupay.merchant.api.MerchantService&methods=queryStoreByPage,queryMerchantByTenantId,bindStaffToStore,queryStoreInMerchant,queryMerchantById,applyMerchant,createMerchant,createStore,createStaff&pid=11336&qos.enable=false&qos.port=22240&register=true&release=2.7.3&side=provider&timestamp=1663495308530, dubbo version: 2.7.3, current host: 192.168.49.1
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:01:48,877 INFO [main][AbstractInterfaceConfig.java:237] -  [DUBBO] There's no valid monitor config found, if you want to open monitor statistics for Dubbo, please make sure your monitor is configured properly., dubbo version: 2.7.3, current host: 192.168.49.1
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:01:48,877 INFO [main][ServiceConfig.java:595] -  [DUBBO] Register dubbo service com.shanjupay.merchant.api.MerchantService url dubbo://192.168.49.1:20890/com.shanjupay.merchant.api.MerchantService?anyhost=true&application=merchant-service&bean.name=ServiceBean:com.shanjupay.merchant.api.MerchantService&bind.ip=192.168.49.1&bind.port=20890&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&interface=com.shanjupay.merchant.api.MerchantService&methods=queryStoreByPage,queryMerchantByTenantId,bindStaffToStore,queryStoreInMerchant,queryMerchantById,applyMerchant,createMerchant,createStore,createStaff&pid=11336&qos.enable=false&qos.port=22240&register=true&release=2.7.3&side=provider&timestamp=1663495308530 to registry registry://192.168.49.1:8848/org.apache.dubbo.registry.RegistryService?application=merchant-service&dubbo=2.0.2&pid=11336&qos.enable=false&qos.port=22240&registry=nacos&release=2.7.3&timestamp=1663495308530, dubbo version: 2.7.3, current host: 192.168.49.1
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:01:48,878 INFO [main][AbstractRegistry.java:280] -  [DUBBO] Register: dubbo://192.168.49.1:20890/com.shanjupay.merchant.api.MerchantService?anyhost=true&application=merchant-service&bean.name=ServiceBean:com.shanjupay.merchant.api.MerchantService&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&interface=com.shanjupay.merchant.api.MerchantService&methods=queryStoreByPage,queryMerchantByTenantId,bindStaffToStore,queryStoreInMerchant,queryMerchantById,applyMerchant,createMerchant,createStore,createStaff&pid=11336&register=true&release=2.7.3&side=provider&timestamp=1663495308530, dubbo version: 2.7.3, current host: 192.168.49.1
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:01:48,881 INFO [main][AbstractRegistry.java:305] -  [DUBBO] Subscribe: provider://192.168.49.1:20890/com.shanjupay.merchant.api.MerchantService?anyhost=true&application=merchant-service&bean.name=ServiceBean:com.shanjupay.merchant.api.MerchantService&bind.ip=192.168.49.1&bind.port=20890&category=configurators&check=false&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&interface=com.shanjupay.merchant.api.MerchantService&methods=queryStoreByPage,queryMerchantByTenantId,bindStaffToStore,queryStoreInMerchant,queryMerchantById,applyMerchant,createMerchant,createStore,createStaff&pid=11336&qos.enable=false&qos.port=22240&register=true&release=2.7.3&side=provider&timestamp=1663495308530, dubbo version: 2.7.3, current host: 192.168.49.1
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:01:48,885 WARN [main][AbstractRegistry.java:395] -  [DUBBO] Ignore empty notify urls for subscribe url provider://192.168.49.1:20890/com.shanjupay.merchant.api.MerchantService?anyhost=true&application=merchant-service&bean.name=ServiceBean:com.shanjupay.merchant.api.MerchantService&bind.ip=192.168.49.1&bind.port=20890&category=configurators&check=false&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&interface=com.shanjupay.merchant.api.MerchantService&methods=queryStoreByPage,queryMerchantByTenantId,bindStaffToStore,queryStoreInMerchant,queryMerchantById,applyMerchant,createMerchant,createStore,createStaff&pid=11336&qos.enable=false&qos.port=22240&register=true&release=2.7.3&side=provider&timestamp=1663495308530, dubbo version: 2.7.3, current host: 192.168.49.1
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:01:48,886 WARN [com.alibaba.nacos.naming.client.listener][AbstractRegistry.java:395] -  [DUBBO] Ignore empty notify urls for subscribe url provider://192.168.49.1:20890/com.shanjupay.merchant.api.MerchantService?anyhost=true&application=merchant-service&bean.name=ServiceBean:com.shanjupay.merchant.api.MerchantService&bind.ip=192.168.49.1&bind.port=20890&category=configurators&check=false&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&interface=com.shanjupay.merchant.api.MerchantService&methods=queryStoreByPage,queryMerchantByTenantId,bindStaffToStore,queryStoreInMerchant,queryMerchantById,applyMerchant,createMerchant,createStore,createStaff&pid=11336&qos.enable=false&qos.port=22240&register=true&release=2.7.3&side=provider&timestamp=1663495308530, dubbo version: 2.7.3, current host: 192.168.49.1
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:01:48,887 INFO [main][DirectJDKLog.java:173] - Starting ProtocolHandler ["http-nio-56040"]
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:01:48,898 INFO [main][TomcatWebServer.java:204] - Tomcat started on port(s): 56040 (http) with context path '/merchant‐service'
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:01:48,912 WARN [main][AbstractInterfaceConfig.java:265] -  [DUBBO] There's no valid metadata config found, if you are using the simplified mode of registry url, please make sure you have a metadata address configured properly., dubbo version: 2.7.3, current host: 192.168.49.1
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:01:48,918 INFO [main][ServiceConfig.java:643] -  [DUBBO] Export dubbo service com.alibaba.cloud.dubbo.service.DubboMetadataService to local registry url : injvm://127.0.0.1/com.alibaba.cloud.dubbo.service.DubboMetadataService?anyhost=true&application=merchant-service&bind.ip=192.168.49.1&bind.port=20890&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&group=merchant-service&interface=com.alibaba.cloud.dubbo.service.DubboMetadataService&methods=getAllServiceKeys,getServiceRestMetadata,getExportedURLs,getAllExportedURLs&pid=11336&qos.enable=false&qos.port=22240&register=true&release=2.7.3&revision=2.1.0.RELEASE&side=provider&timestamp=1663495308913&version=1.0.0, dubbo version: 2.7.3, current host: 192.168.49.1
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:01:48,918 INFO [main][ServiceConfig.java:581] -  [DUBBO] Export dubbo service com.alibaba.cloud.dubbo.service.DubboMetadataService to url dubbo://192.168.49.1:20890/com.alibaba.cloud.dubbo.service.DubboMetadataService?anyhost=true&application=merchant-service&bind.ip=192.168.49.1&bind.port=20890&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&group=merchant-service&interface=com.alibaba.cloud.dubbo.service.DubboMetadataService&methods=getAllServiceKeys,getServiceRestMetadata,getExportedURLs,getAllExportedURLs&pid=11336&qos.enable=false&qos.port=22240&register=true&release=2.7.3&revision=2.1.0.RELEASE&side=provider&timestamp=1663495308913&version=1.0.0, dubbo version: 2.7.3, current host: 192.168.49.1
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:01:48,918 INFO [main][AbstractInterfaceConfig.java:237] -  [DUBBO] There's no valid monitor config found, if you want to open monitor statistics for Dubbo, please make sure your monitor is configured properly., dubbo version: 2.7.3, current host: 192.168.49.1
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:01:48,919 INFO [main][ServiceConfig.java:595] -  [DUBBO] Register dubbo service com.alibaba.cloud.dubbo.service.DubboMetadataService url dubbo://192.168.49.1:20890/com.alibaba.cloud.dubbo.service.DubboMetadataService?anyhost=true&application=merchant-service&bind.ip=192.168.49.1&bind.port=20890&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&group=merchant-service&interface=com.alibaba.cloud.dubbo.service.DubboMetadataService&methods=getAllServiceKeys,getServiceRestMetadata,getExportedURLs,getAllExportedURLs&pid=11336&qos.enable=false&qos.port=22240&register=true&release=2.7.3&revision=2.1.0.RELEASE&side=provider&timestamp=1663495308913&version=1.0.0 to registry registry://192.168.49.1:8848/org.apache.dubbo.registry.RegistryService?application=merchant-service&dubbo=2.0.2&pid=11336&qos.enable=false&qos.port=22240&registry=nacos&release=2.7.3&timestamp=1663495308913, dubbo version: 2.7.3, current host: 192.168.49.1
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:01:48,919 INFO [main][AbstractRegistry.java:280] -  [DUBBO] Register: dubbo://192.168.49.1:20890/com.alibaba.cloud.dubbo.service.DubboMetadataService?anyhost=true&application=merchant-service&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&group=merchant-service&interface=com.alibaba.cloud.dubbo.service.DubboMetadataService&methods=getAllServiceKeys,getServiceRestMetadata,getExportedURLs,getAllExportedURLs&pid=11336&register=true&release=2.7.3&revision=2.1.0.RELEASE&side=provider&timestamp=1663495308913&version=1.0.0, dubbo version: 2.7.3, current host: 192.168.49.1
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:01:48,923 INFO [main][AbstractRegistry.java:305] -  [DUBBO] Subscribe: provider://192.168.49.1:20890/com.alibaba.cloud.dubbo.service.DubboMetadataService?anyhost=true&application=merchant-service&bind.ip=192.168.49.1&bind.port=20890&category=configurators&check=false&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&group=merchant-service&interface=com.alibaba.cloud.dubbo.service.DubboMetadataService&methods=getAllServiceKeys,getServiceRestMetadata,getExportedURLs,getAllExportedURLs&pid=11336&qos.enable=false&qos.port=22240&register=true&release=2.7.3&revision=2.1.0.RELEASE&side=provider&timestamp=1663495308913&version=1.0.0, dubbo version: 2.7.3, current host: 192.168.49.1
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:01:48,927 WARN [main][AbstractRegistry.java:395] -  [DUBBO] Ignore empty notify urls for subscribe url provider://192.168.49.1:20890/com.alibaba.cloud.dubbo.service.DubboMetadataService?anyhost=true&application=merchant-service&bind.ip=192.168.49.1&bind.port=20890&category=configurators&check=false&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&group=merchant-service&interface=com.alibaba.cloud.dubbo.service.DubboMetadataService&methods=getAllServiceKeys,getServiceRestMetadata,getExportedURLs,getAllExportedURLs&pid=11336&qos.enable=false&qos.port=22240&register=true&release=2.7.3&revision=2.1.0.RELEASE&side=provider&timestamp=1663495308913&version=1.0.0, dubbo version: 2.7.3, current host: 192.168.49.1
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:01:48,928 WARN [com.alibaba.nacos.naming.client.listener][AbstractRegistry.java:395] -  [DUBBO] Ignore empty notify urls for subscribe url provider://192.168.49.1:20890/com.alibaba.cloud.dubbo.service.DubboMetadataService?anyhost=true&application=merchant-service&bind.ip=192.168.49.1&bind.port=20890&category=configurators&check=false&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&group=merchant-service&interface=com.alibaba.cloud.dubbo.service.DubboMetadataService&methods=getAllServiceKeys,getServiceRestMetadata,getExportedURLs,getAllExportedURLs&pid=11336&qos.enable=false&qos.port=22240&register=true&release=2.7.3&revision=2.1.0.RELEASE&side=provider&timestamp=1663495308913&version=1.0.0, dubbo version: 2.7.3, current host: 192.168.49.1
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:01:48,928 INFO [main][DubboMetadataServiceExporter.java:86] - The Dubbo service[<dubbo:service path="com.alibaba.cloud.dubbo.service.DubboMetadataService" ref="com.alibaba.cloud.dubbo.service.IntrospectiveDubboMetadataService@7fc1fd31" prefix="dubbo.service.com.alibaba.cloud.dubbo.service.DubboMetadataService" generic="false" unexported="false" exported="true" interface="com.alibaba.cloud.dubbo.service.DubboMetadataService" dynamic="true" version="1.0.0" group="merchant-service" register="true" deprecated="false" id="com.alibaba.cloud.dubbo.service.DubboMetadataService" valid="true" />] has been exported.
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:01:48,944 INFO [main][NacosServiceRegistry.java:62] - nacos registry, merchant-service 192.168.49.1:56040 register finished
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:01:48,948 INFO [main][StartupInfoLogger.java:59] - Started MerchantBootstrap in 8.796 seconds (JVM running for 10.075)
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:01:49,824 INFO [RMI TCP Connection(3)-192.168.49.1][DirectJDKLog.java:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:01:49,824 INFO [RMI TCP Connection(3)-192.168.49.1][FrameworkServlet.java:524] - Initializing Servlet 'dispatcherServlet'
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:01:49,844 INFO [RMI TCP Connection(3)-192.168.49.1][FrameworkServlet.java:546] - Completed initialization in 20 ms
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:02:17,266 WARN [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:1) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:02:47,276 WARN [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:1) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:03:17,283 WARN [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:1) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:03:47,302 WARN [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:1) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:04:17,306 WARN [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:1) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:04:47,317 WARN [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:1) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:05:17,333 WARN [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:1) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:05:47,348 WARN [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:1) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:06:17,364 WARN [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:1) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:06:47,373 WARN [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:1) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:07:17,376 WARN [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:1) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:07:47,381 WARN [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:1) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:08:17,391 WARN [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:1) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:08:47,401 WARN [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:1) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:09:17,406 WARN [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:1) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:09:47,413 WARN [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:1) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:10:17,429 WARN [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:1) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:10:47,439 WARN [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:1) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:11:17,453 WARN [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:1) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:11:47,463 WARN [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:1) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:12:17,475 WARN [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:1) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:12:47,492 WARN [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:1) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:13:17,498 WARN [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:1) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:13:47,504 WARN [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:1) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:14:17,517 WARN [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:1) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:14:47,524 WARN [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:1) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:15:17,532 WARN [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:1) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:15:47,537 WARN [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:1) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:16:17,553 WARN [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:1) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:16:47,564 WARN [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:1) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:17:17,575 WARN [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:1) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:17:47,585 WARN [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:1) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:18:17,592 WARN [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:1) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:18:47,599 WARN [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:1) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:19:17,617 WARN [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:1) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:19:47,627 WARN [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:1) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:20:17,646 WARN [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:1) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:20:47,655 WARN [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:1) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:21:17,661 WARN [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:1) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:21:47,676 WARN [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:1) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:22:17,684 WARN [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:1) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:22:47,700 WARN [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:1) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:23:17,717 WARN [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:1) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:23:47,728 WARN [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:1) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:24:17,744 WARN [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:1) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:24:47,748 WARN [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:1) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:25:17,762 WARN [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:1) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:25:47,775 WARN [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:1) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:26:17,791 WARN [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:1) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:26:47,807 WARN [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:1) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:27:17,813 WARN [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:1) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:27:47,818 WARN [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:1) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:28:17,829 WARN [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:1) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:28:47,839 WARN [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:1) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:29:17,852 WARN [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:1) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:29:47,868 WARN [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:1) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:30:17,874 WARN [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:1) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:30:47,879 WARN [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:1) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:31:17,882 WARN [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:1) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:31:47,892 WARN [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:1) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:32:17,908 WARN [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:1) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:32:47,925 WARN [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:1) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:33:17,939 WARN [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:1) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:33:47,952 WARN [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:1) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:34:17,960 WARN [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:1) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:34:47,971 WARN [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:1) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:35:17,985 WARN [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:1) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:55:22,365 ERROR [com.alibaba.nacos.client.Worker.longPolling.fixed-192.168.49.1_8848-cd8cfdff-2702-4091-a983-a18bcae8fcd0][ServerHttpAgent.java:151] - [NACOS SocketTimeoutException httpPost] currentServerAddr: http://192.168.49.1:8848， err : connect timed out
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:55:22,365 ERROR [com.alibaba.nacos.client.Worker.longPolling.fixed-192.168.49.1_8848-cd8cfdff-2702-4091-a983-a18bcae8fcd0][ServerHttpAgent.java:169] - no available server, currentServerAddr : http://192.168.49.1:8848
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:55:22,365 ERROR [com.alibaba.nacos.client.Worker.longPolling.fixed-192.168.49.1_8848-cd8cfdff-2702-4091-a983-a18bcae8fcd0][ClientWorker.java:389] - [fixed-192.168.49.1_8848-cd8cfdff-2702-4091-a983-a18bcae8fcd0] [check-update] get changed dataId exception
+java.net.ConnectException: no available server, currentServerAddr : http://192.168.49.1:8848
+	at com.alibaba.nacos.client.config.http.ServerHttpAgent.httpPost(ServerHttpAgent.java:170)
+	at com.alibaba.nacos.client.config.http.MetricsHttpAgent.httpPost(MetricsHttpAgent.java:64)
+	at com.alibaba.nacos.client.config.impl.ClientWorker.checkUpdateConfigStr(ClientWorker.java:377)
+	at com.alibaba.nacos.client.config.impl.ClientWorker.checkUpdateDataIds(ClientWorker.java:352)
+	at com.alibaba.nacos.client.config.impl.ClientWorker$LongPollingRunnable.run(ClientWorker.java:512)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:55:22,371 ERROR [com.alibaba.nacos.client.Worker.longPolling.fixed-192.168.49.1_8848-cd8cfdff-2702-4091-a983-a18bcae8fcd0][ClientWorker.java:550] - longPolling error : 
+java.net.ConnectException: no available server, currentServerAddr : http://192.168.49.1:8848
+	at com.alibaba.nacos.client.config.http.ServerHttpAgent.httpPost(ServerHttpAgent.java:170)
+	at com.alibaba.nacos.client.config.http.MetricsHttpAgent.httpPost(MetricsHttpAgent.java:64)
+	at com.alibaba.nacos.client.config.impl.ClientWorker.checkUpdateConfigStr(ClientWorker.java:377)
+	at com.alibaba.nacos.client.config.impl.ClientWorker.checkUpdateDataIds(ClientWorker.java:352)
+	at com.alibaba.nacos.client.config.impl.ClientWorker$LongPollingRunnable.run(ClientWorker.java:512)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:55:23,148 WARN [com.alibaba.nacos.client.naming.updater][HttpClient.java:95] - failed to request http://192.168.49.1:8848/nacos/v1/ns/instance/list?healthyOnly=false&namespaceId=public&clientIP=192.168.49.1&serviceName=DEFAULT_GROUP%40%40providers%3Acom.shanjupay.user.api.TenantService%3A%3A&udpPort=64304&encoding=UTF-8 from 192.168.49.1
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:55:23,148 ERROR [com.alibaba.nacos.client.naming.updater][HttpClient.java:103] - [NA] failed to request 
+java.net.SocketTimeoutException: connect timed out
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:81)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:476)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:218)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:200)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:162)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:394)
+	at java.net.Socket.connect(Socket.java:606)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:175)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:499)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:594)
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:278)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:375)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:393)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1240)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1167)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1061)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:995)
+	at com.alibaba.nacos.client.naming.net.HttpClient.request(HttpClient.java:89)
+	at com.alibaba.nacos.client.naming.net.NamingProxy.callServer(NamingProxy.java:410)
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqAPI(NamingProxy.java:451)
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqAPI(NamingProxy.java:386)
+	at com.alibaba.nacos.client.naming.net.NamingProxy.queryList(NamingProxy.java:297)
+	at com.alibaba.nacos.client.naming.core.HostReactor.updateServiceNow(HostReactor.java:270)
+	at com.alibaba.nacos.client.naming.core.HostReactor$UpdateTask.run(HostReactor.java:315)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:55:23,149 ERROR [com.alibaba.nacos.client.naming.updater][NamingProxy.java:454] - request 192.168.49.1:8848 failed.
+ErrCode:500, ErrMsg:failed to req API:192.168.49.1:8848/nacos/v1/ns/instance/list. code:500 msg: java.net.SocketTimeoutException: connect timed out
+	at com.alibaba.nacos.client.naming.net.NamingProxy.callServer(NamingProxy.java:424)
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqAPI(NamingProxy.java:451)
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqAPI(NamingProxy.java:386)
+	at com.alibaba.nacos.client.naming.net.NamingProxy.queryList(NamingProxy.java:297)
+	at com.alibaba.nacos.client.naming.core.HostReactor.updateServiceNow(HostReactor.java:270)
+	at com.alibaba.nacos.client.naming.core.HostReactor$UpdateTask.run(HostReactor.java:315)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:55:23,149 ERROR [com.alibaba.nacos.client.naming.updater][HostReactor.java:275] - [NA] failed to update serviceName: DEFAULT_GROUP@@providers:com.shanjupay.user.api.TenantService::
+java.lang.IllegalStateException: failed to req API:/nacos/v1/ns/instance/list after all servers([192.168.49.1:8848]) tried: failed to req API:192.168.49.1:8848/nacos/v1/ns/instance/list. code:500 msg: java.net.SocketTimeoutException: connect timed out
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqAPI(NamingProxy.java:464)
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqAPI(NamingProxy.java:386)
+	at com.alibaba.nacos.client.naming.net.NamingProxy.queryList(NamingProxy.java:297)
+	at com.alibaba.nacos.client.naming.core.HostReactor.updateServiceNow(HostReactor.java:270)
+	at com.alibaba.nacos.client.naming.core.HostReactor$UpdateTask.run(HostReactor.java:315)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:55:24,300 WARN [com.alibaba.nacos.naming.beat.sender][HttpClient.java:95] - failed to request http://192.168.49.1:8848/nacos/v1/ns/instance/beat?beat=%7B%22ip%22%3A%22192.168.49.1%22%2C%22metadata%22%3A%7B%22side%22%3A%22consumer%22%2C%22lazy%22%3A%22false%22%2C%22methods%22%3A%22modifyBundle%2CgetTenantByAccount%2CgetAccountByUsername%2CcreateBundle%2CinitBundle%2Clogin%2CisExistAccountByUsername%2CgetBundle%2CunbindTenant%2CremoveTenant%2CqueryTenants%2CqueryBundleByTenantType%2CgetAccountByMobile%2CqueryAccount%2CgetApplicationDTOByClientId%2CchangeBundle%2CisExistAccountInTenantByUsername%2CcreateAccountInTenant%2Cauthentication%2CqueryAccountRole%2CqueryAccountInTenant%2CisExistAccountByMobile%2CsendMessage%2CcreateTenantRelateAccount%2CcreateAccount%2CqueryAllBundle%2CgetTenant%2CqueryAdministratorByPage%2CisExistAccountInTenantByMobile%2CcreateTenantAndAccount%2CaccountPassword%2CbindTenant%22%2C%22release%22%3A%222.7.3%22%2C%22qos.port%22%3A%2222240%22%2C%22dubbo%22%3A%222.0.2%22%2C%22pid%22%3A%2211336%22%2C%22check%22%3A%22false%22%2C%22interface%22%3A%22com.shanjupay.user.api.TenantService%22%2C%22qos.enable%22%3A%22false%22%2C%22timeout%22%3A%2290000%22%2C%22retries%22%3A%22-1%22%2C%22path%22%3A%22com.shanjupay.user.api.TenantService%22%2C%22protocol%22%3A%22consumer%22%2C%22application%22%3A%22merchant-service%22%2C%22sticky%22%3A%22false%22%2C%22category%22%3A%22consumers%22%2C%22timestamp%22%3A%221663495307017%22%7D%2C%22period%22%3A5000%2C%22port%22%3A0%2C%22scheduled%22%3Afalse%2C%22serviceName%22%3A%22DEFAULT_GROUP%40%40consumers%3Acom.shanjupay.user.api.TenantService%3A%3A%22%2C%22stopped%22%3Afalse%2C%22weight%22%3A1.0%7D&serviceName=DEFAULT_GROUP%40%40consumers%3Acom.shanjupay.user.api.TenantService%3A%3A&encoding=UTF-8&namespaceId=public from 192.168.49.1
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:55:24,300 ERROR [com.alibaba.nacos.naming.beat.sender][HttpClient.java:103] - [NA] failed to request 
+java.net.SocketTimeoutException: connect timed out
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:81)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:476)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:218)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:200)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:162)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:394)
+	at java.net.Socket.connect(Socket.java:606)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:175)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:499)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:594)
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:278)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:375)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:393)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1240)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1167)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1061)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:995)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream0(HttpURLConnection.java:1354)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream(HttpURLConnection.java:1329)
+	at com.alibaba.nacos.client.naming.net.HttpClient.request(HttpClient.java:85)
+	at com.alibaba.nacos.client.naming.net.NamingProxy.callServer(NamingProxy.java:410)
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqAPI(NamingProxy.java:451)
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqAPI(NamingProxy.java:386)
+	at com.alibaba.nacos.client.naming.net.NamingProxy.sendBeat(NamingProxy.java:309)
+	at com.alibaba.nacos.client.naming.beat.BeatReactor$BeatTask.run(BeatReactor.java:92)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:55:24,301 ERROR [com.alibaba.nacos.naming.beat.sender][NamingProxy.java:454] - request 192.168.49.1:8848 failed.
+ErrCode:500, ErrMsg:failed to req API:192.168.49.1:8848/nacos/v1/ns/instance/beat. code:500 msg: java.net.SocketTimeoutException: connect timed out
+	at com.alibaba.nacos.client.naming.net.NamingProxy.callServer(NamingProxy.java:424)
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqAPI(NamingProxy.java:451)
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqAPI(NamingProxy.java:386)
+	at com.alibaba.nacos.client.naming.net.NamingProxy.sendBeat(NamingProxy.java:309)
+	at com.alibaba.nacos.client.naming.beat.BeatReactor$BeatTask.run(BeatReactor.java:92)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:55:24,301 ERROR [com.alibaba.nacos.naming.beat.sender][NamingProxy.java:316] - [CLIENT-BEAT] failed to send beat: {"ip":"192.168.49.1","metadata":{"side":"consumer","lazy":"false","methods":"modifyBundle,getTenantByAccount,getAccountByUsername,createBundle,initBundle,login,isExistAccountByUsername,getBundle,unbindTenant,removeTenant,queryTenants,queryBundleByTenantType,getAccountByMobile,queryAccount,getApplicationDTOByClientId,changeBundle,isExistAccountInTenantByUsername,createAccountInTenant,authentication,queryAccountRole,queryAccountInTenant,isExistAccountByMobile,sendMessage,createTenantRelateAccount,createAccount,queryAllBundle,getTenant,queryAdministratorByPage,isExistAccountInTenantByMobile,createTenantAndAccount,accountPassword,bindTenant","release":"2.7.3","qos.port":"22240","dubbo":"2.0.2","pid":"11336","check":"false","interface":"com.shanjupay.user.api.TenantService","qos.enable":"false","timeout":"90000","retries":"-1","path":"com.shanjupay.user.api.TenantService","protocol":"consumer","application":"merchant-service","sticky":"false","category":"consumers","timestamp":"1663495307017"},"period":5000,"port":0,"scheduled":false,"serviceName":"DEFAULT_GROUP@@consumers:com.shanjupay.user.api.TenantService::","stopped":false,"weight":1.0}
+java.lang.IllegalStateException: failed to req API:/nacos/v1/ns/instance/beat after all servers([192.168.49.1:8848]) tried: failed to req API:192.168.49.1:8848/nacos/v1/ns/instance/beat. code:500 msg: java.net.SocketTimeoutException: connect timed out
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqAPI(NamingProxy.java:464)
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqAPI(NamingProxy.java:386)
+	at com.alibaba.nacos.client.naming.net.NamingProxy.sendBeat(NamingProxy.java:309)
+	at com.alibaba.nacos.client.naming.beat.BeatReactor$BeatTask.run(BeatReactor.java:92)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:55:24,580 WARN [com.alibaba.nacos.client.naming.updater][HttpClient.java:95] - failed to request http://192.168.49.1:8848/nacos/v1/ns/instance/list?healthyOnly=false&namespaceId=public&clientIP=192.168.49.1&serviceName=DEFAULT_GROUP%40%40providers%3Acom.shanjupay.merchant.api.MerchantService%3A%3A&udpPort=64304&encoding=UTF-8 from 192.168.49.1
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:55:24,580 WARN [com.alibaba.nacos.client.naming.updater][HttpClient.java:95] - failed to request http://192.168.49.1:8848/nacos/v1/ns/instance/list?healthyOnly=false&namespaceId=public&clientIP=192.168.49.1&serviceName=DEFAULT_GROUP%40%40providers%3Acom.alibaba.cloud.dubbo.service.DubboMetadataService%3A1.0.0%3Amerchant-service&udpPort=64304&encoding=UTF-8 from 192.168.49.1
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:55:24,580 WARN [com.alibaba.nacos.client.naming.updater][HttpClient.java:95] - failed to request http://192.168.49.1:8848/nacos/v1/ns/instance/list?healthyOnly=false&namespaceId=public&clientIP=192.168.49.1&serviceName=DEFAULT_GROUP%40%40providers%3Acom.shanjupay.merchant.api.AppService%3A%3A&udpPort=64304&encoding=UTF-8 from 192.168.49.1
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:55:24,580 ERROR [com.alibaba.nacos.client.naming.updater][HttpClient.java:103] - [NA] failed to request 
+java.net.SocketTimeoutException: connect timed out
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:81)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:476)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:218)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:200)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:162)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:394)
+	at java.net.Socket.connect(Socket.java:606)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:175)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:499)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:594)
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:278)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:375)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:393)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1240)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1167)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1061)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:995)
+	at com.alibaba.nacos.client.naming.net.HttpClient.request(HttpClient.java:89)
+	at com.alibaba.nacos.client.naming.net.NamingProxy.callServer(NamingProxy.java:410)
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqAPI(NamingProxy.java:451)
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqAPI(NamingProxy.java:386)
+	at com.alibaba.nacos.client.naming.net.NamingProxy.queryList(NamingProxy.java:297)
+	at com.alibaba.nacos.client.naming.core.HostReactor.updateServiceNow(HostReactor.java:270)
+	at com.alibaba.nacos.client.naming.core.HostReactor$UpdateTask.run(HostReactor.java:315)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:55:24,580 ERROR [com.alibaba.nacos.client.naming.updater][HttpClient.java:103] - [NA] failed to request 
+java.net.SocketTimeoutException: connect timed out
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:81)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:476)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:218)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:200)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:162)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:394)
+	at java.net.Socket.connect(Socket.java:606)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:175)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:499)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:594)
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:278)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:375)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:393)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1240)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1167)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1061)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:995)
+	at com.alibaba.nacos.client.naming.net.HttpClient.request(HttpClient.java:89)
+	at com.alibaba.nacos.client.naming.net.NamingProxy.callServer(NamingProxy.java:410)
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqAPI(NamingProxy.java:451)
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqAPI(NamingProxy.java:386)
+	at com.alibaba.nacos.client.naming.net.NamingProxy.queryList(NamingProxy.java:297)
+	at com.alibaba.nacos.client.naming.core.HostReactor.updateServiceNow(HostReactor.java:270)
+	at com.alibaba.nacos.client.naming.core.HostReactor$UpdateTask.run(HostReactor.java:315)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:55:24,580 ERROR [com.alibaba.nacos.client.naming.updater][HttpClient.java:103] - [NA] failed to request 
+java.net.SocketTimeoutException: connect timed out
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:81)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:476)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:218)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:200)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:162)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:394)
+	at java.net.Socket.connect(Socket.java:606)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:175)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:499)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:594)
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:278)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:375)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:393)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1240)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1167)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1061)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:995)
+	at com.alibaba.nacos.client.naming.net.HttpClient.request(HttpClient.java:89)
+	at com.alibaba.nacos.client.naming.net.NamingProxy.callServer(NamingProxy.java:410)
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqAPI(NamingProxy.java:451)
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqAPI(NamingProxy.java:386)
+	at com.alibaba.nacos.client.naming.net.NamingProxy.queryList(NamingProxy.java:297)
+	at com.alibaba.nacos.client.naming.core.HostReactor.updateServiceNow(HostReactor.java:270)
+	at com.alibaba.nacos.client.naming.core.HostReactor$UpdateTask.run(HostReactor.java:315)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:55:24,581 ERROR [com.alibaba.nacos.client.naming.updater][NamingProxy.java:454] - request 192.168.49.1:8848 failed.
+ErrCode:500, ErrMsg:failed to req API:192.168.49.1:8848/nacos/v1/ns/instance/list. code:500 msg: java.net.SocketTimeoutException: connect timed out
+	at com.alibaba.nacos.client.naming.net.NamingProxy.callServer(NamingProxy.java:424)
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqAPI(NamingProxy.java:451)
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqAPI(NamingProxy.java:386)
+	at com.alibaba.nacos.client.naming.net.NamingProxy.queryList(NamingProxy.java:297)
+	at com.alibaba.nacos.client.naming.core.HostReactor.updateServiceNow(HostReactor.java:270)
+	at com.alibaba.nacos.client.naming.core.HostReactor$UpdateTask.run(HostReactor.java:315)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:55:25,022 ERROR [com.alibaba.nacos.client.naming.updater][NamingProxy.java:454] - request 192.168.49.1:8848 failed.
+ErrCode:500, ErrMsg:failed to req API:192.168.49.1:8848/nacos/v1/ns/instance/list. code:500 msg: java.net.SocketTimeoutException: connect timed out
+	at com.alibaba.nacos.client.naming.net.NamingProxy.callServer(NamingProxy.java:424)
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqAPI(NamingProxy.java:451)
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqAPI(NamingProxy.java:386)
+	at com.alibaba.nacos.client.naming.net.NamingProxy.queryList(NamingProxy.java:297)
+	at com.alibaba.nacos.client.naming.core.HostReactor.updateServiceNow(HostReactor.java:270)
+	at com.alibaba.nacos.client.naming.core.HostReactor$UpdateTask.run(HostReactor.java:315)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:55:25,022 ERROR [com.alibaba.nacos.client.naming.updater][NamingProxy.java:454] - request 192.168.49.1:8848 failed.
+ErrCode:500, ErrMsg:failed to req API:192.168.49.1:8848/nacos/v1/ns/instance/list. code:500 msg: java.net.SocketTimeoutException: connect timed out
+	at com.alibaba.nacos.client.naming.net.NamingProxy.callServer(NamingProxy.java:424)
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqAPI(NamingProxy.java:451)
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqAPI(NamingProxy.java:386)
+	at com.alibaba.nacos.client.naming.net.NamingProxy.queryList(NamingProxy.java:297)
+	at com.alibaba.nacos.client.naming.core.HostReactor.updateServiceNow(HostReactor.java:270)
+	at com.alibaba.nacos.client.naming.core.HostReactor$UpdateTask.run(HostReactor.java:315)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:55:25,022 ERROR [com.alibaba.nacos.client.naming.updater][HostReactor.java:275] - [NA] failed to update serviceName: DEFAULT_GROUP@@providers:com.shanjupay.merchant.api.AppService::
+java.lang.IllegalStateException: failed to req API:/nacos/v1/ns/instance/list after all servers([192.168.49.1:8848]) tried: failed to req API:192.168.49.1:8848/nacos/v1/ns/instance/list. code:500 msg: java.net.SocketTimeoutException: connect timed out
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqAPI(NamingProxy.java:464)
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqAPI(NamingProxy.java:386)
+	at com.alibaba.nacos.client.naming.net.NamingProxy.queryList(NamingProxy.java:297)
+	at com.alibaba.nacos.client.naming.core.HostReactor.updateServiceNow(HostReactor.java:270)
+	at com.alibaba.nacos.client.naming.core.HostReactor$UpdateTask.run(HostReactor.java:315)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:55:25,023 ERROR [com.alibaba.nacos.client.naming.updater][HostReactor.java:275] - [NA] failed to update serviceName: DEFAULT_GROUP@@providers:com.shanjupay.merchant.api.MerchantService::
+java.lang.IllegalStateException: failed to req API:/nacos/v1/ns/instance/list after all servers([192.168.49.1:8848]) tried: failed to req API:192.168.49.1:8848/nacos/v1/ns/instance/list. code:500 msg: java.net.SocketTimeoutException: connect timed out
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqAPI(NamingProxy.java:464)
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqAPI(NamingProxy.java:386)
+	at com.alibaba.nacos.client.naming.net.NamingProxy.queryList(NamingProxy.java:297)
+	at com.alibaba.nacos.client.naming.core.HostReactor.updateServiceNow(HostReactor.java:270)
+	at com.alibaba.nacos.client.naming.core.HostReactor$UpdateTask.run(HostReactor.java:315)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:55:25,023 ERROR [com.alibaba.nacos.client.naming.updater][HostReactor.java:275] - [NA] failed to update serviceName: DEFAULT_GROUP@@providers:com.alibaba.cloud.dubbo.service.DubboMetadataService:1.0.0:merchant-service
+java.lang.IllegalStateException: failed to req API:/nacos/v1/ns/instance/list after all servers([192.168.49.1:8848]) tried: failed to req API:192.168.49.1:8848/nacos/v1/ns/instance/list. code:500 msg: java.net.SocketTimeoutException: connect timed out
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqAPI(NamingProxy.java:464)
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqAPI(NamingProxy.java:386)
+	at com.alibaba.nacos.client.naming.net.NamingProxy.queryList(NamingProxy.java:297)
+	at com.alibaba.nacos.client.naming.core.HostReactor.updateServiceNow(HostReactor.java:270)
+	at com.alibaba.nacos.client.naming.core.HostReactor$UpdateTask.run(HostReactor.java:315)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:55:25,853 WARN [com.alibaba.nacos.naming.beat.sender][HttpClient.java:95] - failed to request http://192.168.49.1:8848/nacos/v1/ns/instance/beat?beat=%7B%22ip%22%3A%22192.168.49.1%22%2C%22metadata%22%3A%7B%22side%22%3A%22provider%22%2C%22methods%22%3A%22getAllServiceKeys%2CgetServiceRestMetadata%2CgetExportedURLs%2CgetAllExportedURLs%22%2C%22release%22%3A%222.7.3%22%2C%22deprecated%22%3A%22false%22%2C%22dubbo%22%3A%222.0.2%22%2C%22pid%22%3A%2211336%22%2C%22interface%22%3A%22com.alibaba.cloud.dubbo.service.DubboMetadataService%22%2C%22version%22%3A%221.0.0%22%2C%22generic%22%3A%22false%22%2C%22revision%22%3A%222.1.0.RELEASE%22%2C%22path%22%3A%22com.alibaba.cloud.dubbo.service.DubboMetadataService%22%2C%22protocol%22%3A%22dubbo%22%2C%22application%22%3A%22merchant-service%22%2C%22dynamic%22%3A%22true%22%2C%22category%22%3A%22providers%22%2C%22anyhost%22%3A%22true%22%2C%22group%22%3A%22merchant-service%22%2C%22register%22%3A%22true%22%2C%22timestamp%22%3A%221663495308913%22%7D%2C%22period%22%3A5000%2C%22port%22%3A20890%2C%22scheduled%22%3Afalse%2C%22serviceName%22%3A%22DEFAULT_GROUP%40%40providers%3Acom.alibaba.cloud.dubbo.service.DubboMetadataService%3A1.0.0%3Amerchant-service%22%2C%22stopped%22%3Afalse%2C%22weight%22%3A1.0%7D&serviceName=DEFAULT_GROUP%40%40providers%3Acom.alibaba.cloud.dubbo.service.DubboMetadataService%3A1.0.0%3Amerchant-service&encoding=UTF-8&namespaceId=public from 192.168.49.1
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:55:25,853 WARN [com.alibaba.nacos.naming.beat.sender][HttpClient.java:95] - failed to request http://192.168.49.1:8848/nacos/v1/ns/instance/beat?beat=%7B%22ip%22%3A%22192.168.49.1%22%2C%22metadata%22%3A%7B%22side%22%3A%22provider%22%2C%22methods%22%3A%22queryAppByMerchant%2CqueryAppInMerchant%2CcreateApp%2CgetAppById%22%2C%22release%22%3A%222.7.3%22%2C%22deprecated%22%3A%22false%22%2C%22dubbo%22%3A%222.0.2%22%2C%22pid%22%3A%2211336%22%2C%22interface%22%3A%22com.shanjupay.merchant.api.AppService%22%2C%22generic%22%3A%22false%22%2C%22path%22%3A%22com.shanjupay.merchant.api.AppService%22%2C%22protocol%22%3A%22dubbo%22%2C%22application%22%3A%22merchant-service%22%2C%22dynamic%22%3A%22true%22%2C%22category%22%3A%22providers%22%2C%22anyhost%22%3A%22true%22%2C%22bean.name%22%3A%22ServiceBean%3Acom.shanjupay.merchant.api.AppService%22%2C%22register%22%3A%22true%22%2C%22timestamp%22%3A%221663495307278%22%7D%2C%22period%22%3A5000%2C%22port%22%3A20890%2C%22scheduled%22%3Afalse%2C%22serviceName%22%3A%22DEFAULT_GROUP%40%40providers%3Acom.shanjupay.merchant.api.AppService%3A%3A%22%2C%22stopped%22%3Afalse%2C%22weight%22%3A1.0%7D&serviceName=DEFAULT_GROUP%40%40providers%3Acom.shanjupay.merchant.api.AppService%3A%3A&encoding=UTF-8&namespaceId=public from 192.168.49.1
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:55:25,853 WARN [com.alibaba.nacos.naming.beat.sender][HttpClient.java:95] - failed to request http://192.168.49.1:8848/nacos/v1/ns/instance/beat?beat=%7B%22ip%22%3A%22192.168.49.1%22%2C%22metadata%22%3A%7B%22side%22%3A%22provider%22%2C%22methods%22%3A%22queryStoreByPage%2CqueryMerchantByTenantId%2CbindStaffToStore%2CqueryStoreInMerchant%2CqueryMerchantById%2CapplyMerchant%2CcreateMerchant%2CcreateStore%2CcreateStaff%22%2C%22release%22%3A%222.7.3%22%2C%22deprecated%22%3A%22false%22%2C%22dubbo%22%3A%222.0.2%22%2C%22pid%22%3A%2211336%22%2C%22interface%22%3A%22com.shanjupay.merchant.api.MerchantService%22%2C%22generic%22%3A%22false%22%2C%22path%22%3A%22com.shanjupay.merchant.api.MerchantService%22%2C%22protocol%22%3A%22dubbo%22%2C%22application%22%3A%22merchant-service%22%2C%22dynamic%22%3A%22true%22%2C%22category%22%3A%22providers%22%2C%22anyhost%22%3A%22true%22%2C%22bean.name%22%3A%22ServiceBean%3Acom.shanjupay.merchant.api.MerchantService%22%2C%22register%22%3A%22true%22%2C%22timestamp%22%3A%221663495308530%22%7D%2C%22period%22%3A5000%2C%22port%22%3A20890%2C%22scheduled%22%3Afalse%2C%22serviceName%22%3A%22DEFAULT_GROUP%40%40providers%3Acom.shanjupay.merchant.api.MerchantService%3A%3A%22%2C%22stopped%22%3Afalse%2C%22weight%22%3A1.0%7D&serviceName=DEFAULT_GROUP%40%40providers%3Acom.shanjupay.merchant.api.MerchantService%3A%3A&encoding=UTF-8&namespaceId=public from 192.168.49.1
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:55:25,853 ERROR [com.alibaba.nacos.naming.beat.sender][HttpClient.java:103] - [NA] failed to request 
+java.net.SocketTimeoutException: connect timed out
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:81)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:476)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:218)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:200)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:162)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:394)
+	at java.net.Socket.connect(Socket.java:606)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:175)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:499)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:594)
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:278)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:375)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:393)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1240)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1167)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1061)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:995)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream0(HttpURLConnection.java:1354)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream(HttpURLConnection.java:1329)
+	at com.alibaba.nacos.client.naming.net.HttpClient.request(HttpClient.java:85)
+	at com.alibaba.nacos.client.naming.net.NamingProxy.callServer(NamingProxy.java:410)
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqAPI(NamingProxy.java:451)
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqAPI(NamingProxy.java:386)
+	at com.alibaba.nacos.client.naming.net.NamingProxy.sendBeat(NamingProxy.java:309)
+	at com.alibaba.nacos.client.naming.beat.BeatReactor$BeatTask.run(BeatReactor.java:92)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:55:25,853 ERROR [com.alibaba.nacos.naming.beat.sender][HttpClient.java:103] - [NA] failed to request 
+java.net.SocketTimeoutException: connect timed out
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:81)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:476)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:218)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:200)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:162)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:394)
+	at java.net.Socket.connect(Socket.java:606)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:175)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:499)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:594)
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:278)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:375)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:393)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1240)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1167)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1061)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:995)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream0(HttpURLConnection.java:1354)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream(HttpURLConnection.java:1329)
+	at com.alibaba.nacos.client.naming.net.HttpClient.request(HttpClient.java:85)
+	at com.alibaba.nacos.client.naming.net.NamingProxy.callServer(NamingProxy.java:410)
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqAPI(NamingProxy.java:451)
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqAPI(NamingProxy.java:386)
+	at com.alibaba.nacos.client.naming.net.NamingProxy.sendBeat(NamingProxy.java:309)
+	at com.alibaba.nacos.client.naming.beat.BeatReactor$BeatTask.run(BeatReactor.java:92)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:55:25,853 ERROR [com.alibaba.nacos.naming.beat.sender][HttpClient.java:103] - [NA] failed to request 
+java.net.SocketTimeoutException: connect timed out
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:81)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:476)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:218)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:200)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:162)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:394)
+	at java.net.Socket.connect(Socket.java:606)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:175)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:499)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:594)
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:278)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:375)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:393)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1240)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1167)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1061)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:995)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream0(HttpURLConnection.java:1354)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream(HttpURLConnection.java:1329)
+	at com.alibaba.nacos.client.naming.net.HttpClient.request(HttpClient.java:85)
+	at com.alibaba.nacos.client.naming.net.NamingProxy.callServer(NamingProxy.java:410)
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqAPI(NamingProxy.java:451)
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqAPI(NamingProxy.java:386)
+	at com.alibaba.nacos.client.naming.net.NamingProxy.sendBeat(NamingProxy.java:309)
+	at com.alibaba.nacos.client.naming.beat.BeatReactor$BeatTask.run(BeatReactor.java:92)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:55:25,854 ERROR [com.alibaba.nacos.naming.beat.sender][NamingProxy.java:454] - request 192.168.49.1:8848 failed.
+ErrCode:500, ErrMsg:failed to req API:192.168.49.1:8848/nacos/v1/ns/instance/beat. code:500 msg: java.net.SocketTimeoutException: connect timed out
+	at com.alibaba.nacos.client.naming.net.NamingProxy.callServer(NamingProxy.java:424)
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqAPI(NamingProxy.java:451)
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqAPI(NamingProxy.java:386)
+	at com.alibaba.nacos.client.naming.net.NamingProxy.sendBeat(NamingProxy.java:309)
+	at com.alibaba.nacos.client.naming.beat.BeatReactor$BeatTask.run(BeatReactor.java:92)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:55:25,854 ERROR [com.alibaba.nacos.naming.beat.sender][NamingProxy.java:454] - request 192.168.49.1:8848 failed.
+ErrCode:500, ErrMsg:failed to req API:192.168.49.1:8848/nacos/v1/ns/instance/beat. code:500 msg: java.net.SocketTimeoutException: connect timed out
+	at com.alibaba.nacos.client.naming.net.NamingProxy.callServer(NamingProxy.java:424)
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqAPI(NamingProxy.java:451)
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqAPI(NamingProxy.java:386)
+	at com.alibaba.nacos.client.naming.net.NamingProxy.sendBeat(NamingProxy.java:309)
+	at com.alibaba.nacos.client.naming.beat.BeatReactor$BeatTask.run(BeatReactor.java:92)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:55:25,854 ERROR [com.alibaba.nacos.naming.beat.sender][NamingProxy.java:454] - request 192.168.49.1:8848 failed.
+ErrCode:500, ErrMsg:failed to req API:192.168.49.1:8848/nacos/v1/ns/instance/beat. code:500 msg: java.net.SocketTimeoutException: connect timed out
+	at com.alibaba.nacos.client.naming.net.NamingProxy.callServer(NamingProxy.java:424)
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqAPI(NamingProxy.java:451)
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqAPI(NamingProxy.java:386)
+	at com.alibaba.nacos.client.naming.net.NamingProxy.sendBeat(NamingProxy.java:309)
+	at com.alibaba.nacos.client.naming.beat.BeatReactor$BeatTask.run(BeatReactor.java:92)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:55:25,854 ERROR [com.alibaba.nacos.naming.beat.sender][NamingProxy.java:316] - [CLIENT-BEAT] failed to send beat: {"ip":"192.168.49.1","metadata":{"side":"provider","methods":"queryAppByMerchant,queryAppInMerchant,createApp,getAppById","release":"2.7.3","deprecated":"false","dubbo":"2.0.2","pid":"11336","interface":"com.shanjupay.merchant.api.AppService","generic":"false","path":"com.shanjupay.merchant.api.AppService","protocol":"dubbo","application":"merchant-service","dynamic":"true","category":"providers","anyhost":"true","bean.name":"ServiceBean:com.shanjupay.merchant.api.AppService","register":"true","timestamp":"1663495307278"},"period":5000,"port":20890,"scheduled":false,"serviceName":"DEFAULT_GROUP@@providers:com.shanjupay.merchant.api.AppService::","stopped":false,"weight":1.0}
+java.lang.IllegalStateException: failed to req API:/nacos/v1/ns/instance/beat after all servers([192.168.49.1:8848]) tried: failed to req API:192.168.49.1:8848/nacos/v1/ns/instance/beat. code:500 msg: java.net.SocketTimeoutException: connect timed out
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqAPI(NamingProxy.java:464)
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqAPI(NamingProxy.java:386)
+	at com.alibaba.nacos.client.naming.net.NamingProxy.sendBeat(NamingProxy.java:309)
+	at com.alibaba.nacos.client.naming.beat.BeatReactor$BeatTask.run(BeatReactor.java:92)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:55:25,854 ERROR [com.alibaba.nacos.naming.beat.sender][NamingProxy.java:316] - [CLIENT-BEAT] failed to send beat: {"ip":"192.168.49.1","metadata":{"side":"provider","methods":"queryStoreByPage,queryMerchantByTenantId,bindStaffToStore,queryStoreInMerchant,queryMerchantById,applyMerchant,createMerchant,createStore,createStaff","release":"2.7.3","deprecated":"false","dubbo":"2.0.2","pid":"11336","interface":"com.shanjupay.merchant.api.MerchantService","generic":"false","path":"com.shanjupay.merchant.api.MerchantService","protocol":"dubbo","application":"merchant-service","dynamic":"true","category":"providers","anyhost":"true","bean.name":"ServiceBean:com.shanjupay.merchant.api.MerchantService","register":"true","timestamp":"1663495308530"},"period":5000,"port":20890,"scheduled":false,"serviceName":"DEFAULT_GROUP@@providers:com.shanjupay.merchant.api.MerchantService::","stopped":false,"weight":1.0}
+java.lang.IllegalStateException: failed to req API:/nacos/v1/ns/instance/beat after all servers([192.168.49.1:8848]) tried: failed to req API:192.168.49.1:8848/nacos/v1/ns/instance/beat. code:500 msg: java.net.SocketTimeoutException: connect timed out
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqAPI(NamingProxy.java:464)
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqAPI(NamingProxy.java:386)
+	at com.alibaba.nacos.client.naming.net.NamingProxy.sendBeat(NamingProxy.java:309)
+	at com.alibaba.nacos.client.naming.beat.BeatReactor$BeatTask.run(BeatReactor.java:92)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:55:25,854 ERROR [com.alibaba.nacos.naming.beat.sender][NamingProxy.java:316] - [CLIENT-BEAT] failed to send beat: {"ip":"192.168.49.1","metadata":{"side":"provider","methods":"getAllServiceKeys,getServiceRestMetadata,getExportedURLs,getAllExportedURLs","release":"2.7.3","deprecated":"false","dubbo":"2.0.2","pid":"11336","interface":"com.alibaba.cloud.dubbo.service.DubboMetadataService","version":"1.0.0","generic":"false","revision":"2.1.0.RELEASE","path":"com.alibaba.cloud.dubbo.service.DubboMetadataService","protocol":"dubbo","application":"merchant-service","dynamic":"true","category":"providers","anyhost":"true","group":"merchant-service","register":"true","timestamp":"1663495308913"},"period":5000,"port":20890,"scheduled":false,"serviceName":"DEFAULT_GROUP@@providers:com.alibaba.cloud.dubbo.service.DubboMetadataService:1.0.0:merchant-service","stopped":false,"weight":1.0}
+java.lang.IllegalStateException: failed to req API:/nacos/v1/ns/instance/beat after all servers([192.168.49.1:8848]) tried: failed to req API:192.168.49.1:8848/nacos/v1/ns/instance/beat. code:500 msg: java.net.SocketTimeoutException: connect timed out
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqAPI(NamingProxy.java:464)
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqAPI(NamingProxy.java:386)
+	at com.alibaba.nacos.client.naming.net.NamingProxy.sendBeat(NamingProxy.java:309)
+	at com.alibaba.nacos.client.naming.beat.BeatReactor$BeatTask.run(BeatReactor.java:92)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:55:26,124 WARN [com.alibaba.nacos.naming.beat.sender][HttpClient.java:95] - failed to request http://192.168.49.1:8848/nacos/v1/ns/instance/beat?beat=%7B%22cluster%22%3A%22DEFAULT%22%2C%22ip%22%3A%22192.168.49.1%22%2C%22metadata%22%3A%7B%22dubbo.metadata-service.urls%22%3A%22%5B+%5C%22dubbo%3A%2F%2F192.168.49.1%3A20890%2Fcom.alibaba.cloud.dubbo.service.DubboMetadataService%3Fanyhost%3Dtrue%26application%3Dmerchant-service%26bind.ip%3D192.168.49.1%26bind.port%3D20890%26deprecated%3Dfalse%26dubbo%3D2.0.2%26dynamic%3Dtrue%26generic%3Dfalse%26group%3Dmerchant-service%26interface%3Dcom.alibaba.cloud.dubbo.service.DubboMetadataService%26methods%3DgetAllServiceKeys%2CgetServiceRestMetadata%2CgetExportedURLs%2CgetAllExportedURLs%26pid%3D11336%26qos.enable%3Dfalse%26qos.port%3D22240%26register%3Dtrue%26release%3D2.7.3%26revision%3D2.1.0.RELEASE%26side%3Dprovider%26timestamp%3D1663495308913%26version%3D1.0.0%5C%22+%5D%22%2C%22dubbo.protocols.dubbo.port%22%3A%2220890%22%2C%22preserved.register.source%22%3A%22SPRING_CLOUD%22%7D%2C%22period%22%3A5000%2C%22port%22%3A56040%2C%22scheduled%22%3Afalse%2C%22serviceName%22%3A%22DEFAULT_GROUP%40%40merchant-service%22%2C%22stopped%22%3Afalse%2C%22weight%22%3A1.0%7D&serviceName=DEFAULT_GROUP%40%40merchant-service&encoding=UTF-8&namespaceId=cd8cfdff-2702-4091-a983-a18bcae8fcd0 from 192.168.49.1
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:55:26,124 ERROR [com.alibaba.nacos.naming.beat.sender][HttpClient.java:103] - [NA] failed to request 
+java.net.SocketTimeoutException: connect timed out
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:81)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:476)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:218)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:200)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:162)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:394)
+	at java.net.Socket.connect(Socket.java:606)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:175)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:499)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:594)
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:278)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:375)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:393)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1240)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1167)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1061)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:995)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream0(HttpURLConnection.java:1354)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream(HttpURLConnection.java:1329)
+	at com.alibaba.nacos.client.naming.net.HttpClient.request(HttpClient.java:85)
+	at com.alibaba.nacos.client.naming.net.NamingProxy.callServer(NamingProxy.java:410)
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqAPI(NamingProxy.java:451)
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqAPI(NamingProxy.java:386)
+	at com.alibaba.nacos.client.naming.net.NamingProxy.sendBeat(NamingProxy.java:309)
+	at com.alibaba.nacos.client.naming.beat.BeatReactor$BeatTask.run(BeatReactor.java:92)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:55:26,125 ERROR [com.alibaba.nacos.naming.beat.sender][NamingProxy.java:454] - request 192.168.49.1:8848 failed.
+ErrCode:500, ErrMsg:failed to req API:192.168.49.1:8848/nacos/v1/ns/instance/beat. code:500 msg: java.net.SocketTimeoutException: connect timed out
+	at com.alibaba.nacos.client.naming.net.NamingProxy.callServer(NamingProxy.java:424)
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqAPI(NamingProxy.java:451)
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqAPI(NamingProxy.java:386)
+	at com.alibaba.nacos.client.naming.net.NamingProxy.sendBeat(NamingProxy.java:309)
+	at com.alibaba.nacos.client.naming.beat.BeatReactor$BeatTask.run(BeatReactor.java:92)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:55:26,125 ERROR [com.alibaba.nacos.naming.beat.sender][NamingProxy.java:316] - [CLIENT-BEAT] failed to send beat: {"cluster":"DEFAULT","ip":"192.168.49.1","metadata":{"dubbo.metadata-service.urls":"[ \"dubbo://192.168.49.1:20890/com.alibaba.cloud.dubbo.service.DubboMetadataService?anyhost=true&application=merchant-service&bind.ip=192.168.49.1&bind.port=20890&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&group=merchant-service&interface=com.alibaba.cloud.dubbo.service.DubboMetadataService&methods=getAllServiceKeys,getServiceRestMetadata,getExportedURLs,getAllExportedURLs&pid=11336&qos.enable=false&qos.port=22240&register=true&release=2.7.3&revision=2.1.0.RELEASE&side=provider&timestamp=1663495308913&version=1.0.0\" ]","dubbo.protocols.dubbo.port":"20890","preserved.register.source":"SPRING_CLOUD"},"period":5000,"port":56040,"scheduled":false,"serviceName":"DEFAULT_GROUP@@merchant-service","stopped":false,"weight":1.0}
+java.lang.IllegalStateException: failed to req API:/nacos/v1/ns/instance/beat after all servers([192.168.49.1:8848]) tried: failed to req API:192.168.49.1:8848/nacos/v1/ns/instance/beat. code:500 msg: java.net.SocketTimeoutException: connect timed out
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqAPI(NamingProxy.java:464)
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqAPI(NamingProxy.java:386)
+	at com.alibaba.nacos.client.naming.net.NamingProxy.sendBeat(NamingProxy.java:309)
+	at com.alibaba.nacos.client.naming.beat.BeatReactor$BeatTask.run(BeatReactor.java:92)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:55:27,384 ERROR [com.alibaba.nacos.client.Worker.longPolling.fixed-192.168.49.1_8848-cd8cfdff-2702-4091-a983-a18bcae8fcd0][ServerHttpAgent.java:151] - [NACOS SocketTimeoutException httpPost] currentServerAddr: http://192.168.49.1:8848， err : connect timed out
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:55:27,901 WARN [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:1) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:55:57,914 WARN [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:1) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:56:27,929 WARN [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:1) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:56:57,946 WARN [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:1) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:57:27,948 WARN [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:1) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:57:57,958 WARN [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:1) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:58:27,965 WARN [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:1) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:58:57,977 WARN [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:1) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:59:27,985 WARN [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:1) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[${project.name}][${env:SERVER_PORT}] 2022-09-18 18:59:57,992 WARN [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:1) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services

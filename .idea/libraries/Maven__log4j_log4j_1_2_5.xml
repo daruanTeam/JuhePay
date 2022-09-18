@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: log4j:log4j:1.2.5">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/Desktop/支付服务/day01资料/资料/本地仓库/repository3/log4j/log4j/1.2.5/log4j-1.2.5.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/Desktop/支付服务/day01资料/资料/本地仓库/repository3/log4j/log4j/1.2.5/log4j-1.2.5-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/Desktop/支付服务/day01资料/资料/本地仓库/repository3/log4j/log4j/1.2.5/log4j-1.2.5-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
