@@ -154,7 +154,7 @@ public class MerchantServiceImpl implements MerchantService {
         //使用MapStruct进行对象转换
         Merchant merchant = MerchantConvert.INSTANCE.dto2entity(merchantDTO);
         //设置所对应的租户的Id
-        merchant.setTenantId(tenantId);
+        //merchant.setTenantId(tenantId);
         //审核状态为0-未进行资质申请
         merchant.setAuditStatus("0");
         //调用mapper向数据库写入记录

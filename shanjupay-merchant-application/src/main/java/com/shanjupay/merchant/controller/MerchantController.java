@@ -53,6 +53,7 @@ public class MerchantController {
         Long merchantId = SecurityUtil.getMerchantId();
         return merchantService.queryMerchantById(merchantId);
     }
+
     @ApiOperation("获取手机验证码")
     @GetMapping("/sms")
     @ApiImplicitParam(value = "手机号",name = "phone",required = true,dataType = "string",paramType = "query")
@@ -111,15 +112,19 @@ public class MerchantController {
 
     @ApiOperation("资质申请")
     @PostMapping("/my/merchants/save")
-    @ApiImplicitParams({
+    /*@ApiImplicitParams({
             @ApiImplicitParam(name = "merchantInfo", value = "商户认证资料", required = true, dataType = "MerchantDetailVO", paramType = "body")
-    })
+    })*/
+    @ApiImplicitParam(
+            name = "merchantInfo", value = "商户认证资料", required = true, dataType = "MerchantDetailVO", paramType = "body"
+    )
     public void saveMerchant(@RequestBody  MerchantDetailVO merchantInfo){
         //解析token，取出当前登录商户的id
         Long merchantId = SecurityUtil.getMerchantId();
 
         //Long merchantId,MerchantDTO merchantDTO
         MerchantDTO merchantDTO = MerchantDetailConvert.INSTANCE.vo2dto(merchantInfo);
+        System.out.println(merchantId);
         merchantService.applyMerchant(merchantId,merchantDTO);
     }
 

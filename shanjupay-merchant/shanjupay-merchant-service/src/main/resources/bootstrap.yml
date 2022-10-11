@@ -20,7 +20,7 @@ spring:
       config:
         server-addr: ${nacos.server.addr} # 配置中心地址
         file-extension: yaml
-        namespace: cd8cfdff-2702-4091-a983-a18bcae8fcd0 # 命令行注入
+        namespace: cd8cfdff-2702-4091-a983-a18bcae8fcd0 # 命令行注入2
         group: SHANJUPAY_GROUP # 聚合支付业务组
         ext-config:
         -
