@@ -1,13 +1,13 @@
 <component name="libraryTable">
   <library name="Maven: io.netty:netty-common:4.1.33.Final">
     <CLASSES>
-      <root url="jar://$USER_HOME$/Desktop/支付服务/day01资料/资料/本地仓库/repository3/io/netty/netty-common/4.1.33.Final/netty-common-4.1.33.Final.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../repository3/io/netty/netty-common/4.1.33.Final/netty-common-4.1.33.Final.jar!/" />
     </CLASSES>
     <JAVADOC>
-      <root url="jar://$USER_HOME$/Desktop/支付服务/day01资料/资料/本地仓库/repository3/io/netty/netty-common/4.1.33.Final/netty-common-4.1.33.Final-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../repository3/io/netty/netty-common/4.1.33.Final/netty-common-4.1.33.Final-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES>
-      <root url="jar://$USER_HOME$/Desktop/支付服务/day01资料/资料/本地仓库/repository3/io/netty/netty-common/4.1.33.Final/netty-common-4.1.33.Final-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../repository3/io/netty/netty-common/4.1.33.Final/netty-common-4.1.33.Final-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

@@ -56,19 +56,20 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="rocketmq-consumer" options="-parameters" />
       <module name="rocketmq-producer" options="-parameters" />
-      <module name="shanjupay-common" options="-parameters -bootclasspath &quot;C:/Program Files/Java/jdk1.8.0_341/jre/lib/rt.jar;C:/Program Files/Java/jdk1.8.0_341/jre/lib/jce.jar&quot;" />
+      <module name="shanjupay-common" options="-parameters -bootclasspath $USER_HOME$/.jdks/liberica-1.8.0_345/jre/lib/rt.jar;$USER_HOME$/.jdks/liberica-1.8.0_345/jre/lib/jce.jar" />
+      <module name="shanjupay-gateway" options="" />
       <module name="shanjupay-gateway-service" options="-parameters" />
       <module name="shanjupay-merchant" options="" />
       <module name="shanjupay-merchant-api" options="-parameters" />
       <module name="shanjupay-merchant-application" options="-parameters" />
       <module name="shanjupay-merchant-service" options="-parameters" />
-      <module name="shanjupay-payment-agent-api" options="-parameters -bootclasspath &quot;C:/Program Files/Java/jdk1.8.0_341/jre/lib/rt.jar;C:/Program Files/Java/jdk1.8.0_341/jre/lib/jce.jar&quot;" />
+      <module name="shanjupay-payment-agent-api" options="-parameters -bootclasspath $USER_HOME$/.jdks/liberica-1.8.0_345/jre/lib/rt.jar;$USER_HOME$/.jdks/liberica-1.8.0_345/jre/lib/jce.jar" />
       <module name="shanjupay-payment-agent-service" options="-parameters" />
-      <module name="shanjupay-transaction-api" options="-parameters -bootclasspath &quot;C:/Program Files/Java/jdk1.8.0_341/jre/lib/rt.jar;C:/Program Files/Java/jdk1.8.0_341/jre/lib/jce.jar&quot;" />
+      <module name="shanjupay-transaction-api" options="-parameters -bootclasspath $USER_HOME$/.jdks/liberica-1.8.0_345/jre/lib/rt.jar;$USER_HOME$/.jdks/liberica-1.8.0_345/jre/lib/jce.jar" />
       <module name="shanjupay-transaction-service" options="-parameters" />
-      <module name="shanjupay-uaa-api" options="-parameters -bootclasspath &quot;C:/Program Files/Java/jdk1.8.0_341/jre/lib/rt.jar;C:/Program Files/Java/jdk1.8.0_341/jre/lib/jce.jar&quot;" />
+      <module name="shanjupay-uaa-api" options="-parameters -bootclasspath $USER_HOME$/.jdks/liberica-1.8.0_345/jre/lib/rt.jar;$USER_HOME$/.jdks/liberica-1.8.0_345/jre/lib/jce.jar" />
       <module name="shanjupay-uaa-service" options="-parameters" />
-      <module name="shanjupay-user-api" options="-parameters -bootclasspath &quot;C:/Program Files/Java/jdk1.8.0_341/jre/lib/rt.jar;C:/Program Files/Java/jdk1.8.0_341/jre/lib/jce.jar&quot;" />
+      <module name="shanjupay-user-api" options="-parameters -bootclasspath $USER_HOME$/.jdks/liberica-1.8.0_345/jre/lib/rt.jar;$USER_HOME$/.jdks/liberica-1.8.0_345/jre/lib/jce.jar" />
       <module name="shanjupay-user-service" options="-parameters" />
       <module name="test-freemarker" options="-parameters" />
     </option>

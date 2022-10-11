@@ -1,13 +1,13 @@
 <component name="libraryTable">
   <library name="Maven: org.springframework.cloud:spring-cloud-netflix-zuul:2.1.0.RELEASE">
     <CLASSES>
-      <root url="jar://$USER_HOME$/Desktop/支付服务/day01资料/资料/本地仓库/repository3/org/springframework/cloud/spring-cloud-netflix-zuul/2.1.0.RELEASE/spring-cloud-netflix-zuul-2.1.0.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../repository3/org/springframework/cloud/spring-cloud-netflix-zuul/2.1.0.RELEASE/spring-cloud-netflix-zuul-2.1.0.RELEASE.jar!/" />
     </CLASSES>
     <JAVADOC>
-      <root url="jar://$USER_HOME$/Desktop/支付服务/day01资料/资料/本地仓库/repository3/org/springframework/cloud/spring-cloud-netflix-zuul/2.1.0.RELEASE/spring-cloud-netflix-zuul-2.1.0.RELEASE-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../repository3/org/springframework/cloud/spring-cloud-netflix-zuul/2.1.0.RELEASE/spring-cloud-netflix-zuul-2.1.0.RELEASE-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES>
-      <root url="jar://$USER_HOME$/Desktop/支付服务/day01资料/资料/本地仓库/repository3/org/springframework/cloud/spring-cloud-netflix-zuul/2.1.0.RELEASE/spring-cloud-netflix-zuul-2.1.0.RELEASE-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../repository3/org/springframework/cloud/spring-cloud-netflix-zuul/2.1.0.RELEASE/spring-cloud-netflix-zuul-2.1.0.RELEASE-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

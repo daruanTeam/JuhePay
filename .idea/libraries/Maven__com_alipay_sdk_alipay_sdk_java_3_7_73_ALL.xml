@@ -1,13 +1,13 @@
 <component name="libraryTable">
   <library name="Maven: com.alipay.sdk:alipay-sdk-java:3.7.73.ALL">
     <CLASSES>
-      <root url="jar://$USER_HOME$/Desktop/支付服务/day01资料/资料/本地仓库/repository3/com/alipay/sdk/alipay-sdk-java/3.7.73.ALL/alipay-sdk-java-3.7.73.ALL.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../repository3/com/alipay/sdk/alipay-sdk-java/3.7.73.ALL/alipay-sdk-java-3.7.73.ALL.jar!/" />
     </CLASSES>
     <JAVADOC>
-      <root url="jar://$USER_HOME$/Desktop/支付服务/day01资料/资料/本地仓库/repository3/com/alipay/sdk/alipay-sdk-java/3.7.73.ALL/alipay-sdk-java-3.7.73.ALL-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../repository3/com/alipay/sdk/alipay-sdk-java/3.7.73.ALL/alipay-sdk-java-3.7.73.ALL-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES>
-      <root url="jar://$USER_HOME$/Desktop/支付服务/day01资料/资料/本地仓库/repository3/com/alipay/sdk/alipay-sdk-java/3.7.73.ALL/alipay-sdk-java-3.7.73.ALL-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../repository3/com/alipay/sdk/alipay-sdk-java/3.7.73.ALL/alipay-sdk-java-3.7.73.ALL-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

@@ -1,13 +1,13 @@
 <component name="libraryTable">
   <library name="Maven: org.xmlunit:xmlunit-core:2.6.2">
     <CLASSES>
-      <root url="jar://$USER_HOME$/Desktop/支付服务/day01资料/资料/本地仓库/repository3/org/xmlunit/xmlunit-core/2.6.2/xmlunit-core-2.6.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../repository3/org/xmlunit/xmlunit-core/2.6.2/xmlunit-core-2.6.2.jar!/" />
     </CLASSES>
     <JAVADOC>
-      <root url="jar://$USER_HOME$/Desktop/支付服务/day01资料/资料/本地仓库/repository3/org/xmlunit/xmlunit-core/2.6.2/xmlunit-core-2.6.2-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../repository3/org/xmlunit/xmlunit-core/2.6.2/xmlunit-core-2.6.2-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES>
-      <root url="jar://$USER_HOME$/Desktop/支付服务/day01资料/资料/本地仓库/repository3/org/xmlunit/xmlunit-core/2.6.2/xmlunit-core-2.6.2-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../repository3/org/xmlunit/xmlunit-core/2.6.2/xmlunit-core-2.6.2-sources.jar!/" />
     </SOURCES>
   </library>
 </component>
