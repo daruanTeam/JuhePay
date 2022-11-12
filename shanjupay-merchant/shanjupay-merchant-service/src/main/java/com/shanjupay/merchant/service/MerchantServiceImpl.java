@@ -154,7 +154,7 @@ public class MerchantServiceImpl implements MerchantService {
         //使用MapStruct进行对象转换
         Merchant merchant = MerchantConvert.INSTANCE.dto2entity(merchantDTO);
         //设置所对应的租户的Id
-        //merchant.setTenantId(tenantId);
+        merchant.setTenantId(tenantId);
         //审核状态为0-未进行资质申请
         merchant.setAuditStatus("0");
         //调用mapper向数据库写入记录
@@ -349,4 +349,27 @@ public class MerchantServiceImpl implements MerchantService {
                 .eq(Staff::getMerchantId, merchantId));
         return count>0;
     }
+
+    @Override
+    public void rejectMerchant(Long merchantId) throws BusinessException {
+        //校验merchantId合法性，查询商户表，如果查询不到记录，认为非法
+        Merchant merchant = merchantMapper.selectById(merchantId);
+        if(merchant == null){
+            throw new BusinessException(CommonErrorCode.E_200002);
+        }
+        merchant.setAuditStatus("3");
+        merchantMapper.updateById(merchant);
+    }
+
+    @Override
+    public void agreeMerchant(Long merchantId) throws BusinessException {
+        //校验merchantId合法性，查询商户表，如果查询不到记录，认为非法
+        Merchant merchant = merchantMapper.selectById(merchantId);
+        if(merchant == null){
+            throw new BusinessException(CommonErrorCode.E_200002);
+        }
+        merchant.setAuditStatus("2");
+        merchantMapper.updateById(merchant);
+    }
+
 }

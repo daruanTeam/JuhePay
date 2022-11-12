@@ -82,13 +82,13 @@ public class PayChannelAgentServiceImpl implements PayChannelAgentService {
             log.info("调用支付宝下单接口，响应内容:{}",response.getBody());
             paymentResponseDTO.setContent(response.getBody());//支付宝的响应结果
 
-            //向MQ发一条延迟消息,支付结果查询
-            PaymentResponseDTO<AliConfigParam> notice = new PaymentResponseDTO<AliConfigParam>();
-            notice.setOutTradeNo(alipayBean.getOutTradeNo());//闪聚平台的订单
-            notice.setContent(aliConfigParam);
-            notice.setMsg("ALIPAY_WAP");//标识是查询支付宝的接口
-            //发送消息
-            payProducer.payOrderNotice(notice);
+//            //向MQ发一条延迟消息,支付结果查询
+//            PaymentResponseDTO<AliConfigParam> notice = new PaymentResponseDTO<AliConfigParam>();
+//            notice.setOutTradeNo(alipayBean.getOutTradeNo());//闪聚平台的订单
+//            notice.setContent(aliConfigParam);
+//            notice.setMsg("ALIPAY_WAP");//标识是查询支付宝的接口
+//            //发送消息
+//            payProducer.payOrderNotice(notice);
 
 
             return paymentResponseDTO;

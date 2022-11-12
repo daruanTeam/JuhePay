@@ -19,6 +19,7 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.io.IOException;
+import java.io.UnsupportedEncodingException;
 import java.util.UUID;
 
 /**
@@ -126,6 +127,31 @@ public class MerchantController {
         MerchantDTO merchantDTO = MerchantDetailConvert.INSTANCE.vo2dto(merchantInfo);
         System.out.println(merchantId);
         merchantService.applyMerchant(merchantId,merchantDTO);
+    }
+
+
+    //获取证件
+    @ApiOperation("获取证件照下载链接")
+    @GetMapping("/download")
+    public String download(@ApiParam(value="文件名",required = true)
+                           @RequestParam("fileName") String fileName) throws UnsupportedEncodingException {
+        return fileService.getDownUrl(fileName);
+    }
+
+    @ApiOperation("拒绝资质申请")
+    @PutMapping("/my/merchants/reject")
+    public void rejectMerchant(@ApiParam(value="商户id",required = true)
+                               @RequestParam("merchantId") String merchantId){
+
+        merchantService.rejectMerchant(Long.parseLong(merchantId));
+    }
+
+    @ApiOperation("同意资质申请")
+    @PutMapping("/my/merchants/agree")
+    public void agreeMerchant(@ApiParam(value="商户id",required = true)
+                              @RequestParam("merchantId") String merchantId){
+        //解析token，取出当前登录商户的id
+        merchantService.agreeMerchant(Long.parseLong(merchantId));
     }
 
     @ApiOperation("测试")

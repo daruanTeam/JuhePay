@@ -62,48 +62,50 @@ public class PayController {
             case ALIPAY:
                 //转发到确认页面
                 return "forward:/pay-page?"+params;
-            case WECHAT:
-                //先获取授权码，申请openid，再到支付确认页面
-                return transactionService.getWXOAuth2Code(payOrderDTO);
+//            case WECHAT:
+//                //先获取授权码，申请openid，再到支付确认页面
+//                return transactionService.getWXOAuth2Code(payOrderDTO);
              default:
 
         }
         //不支持客户端类型，转发到错误页面
         return "forward:/pay-page-error";
+
+        //return "forward:/pay-page?"+params;
     }
-
-    /**
-     * 授权码回调，申请获取授权码，微信将授权码请求到此地址
-     * @param code 授权码
-     * @param state 订单信息
-     * @return
-     */
-    @ApiOperation("微信授权码回调")
-    @GetMapping("/wx-oauth-code-return")
-    public String wxOAuth2CodeReturn(@RequestParam String code,@RequestParam String state)  {
-
-        String jsonString = EncryptUtil.decodeUTF8StringBase64(state);
-        PayOrderDTO payOrderDTO = JSON.parseObject(jsonString, PayOrderDTO.class);
-        //闪聚平台的应用id
-        String appId = payOrderDTO.getAppId();
-
-        //接收到code授权码，申请openid
-        String openId = transactionService.getWXOAuthOpenId(code, appId);
-        //将对象的属性和值组成一个url的key/value串
-        String params = null;
-        try {
-            params = ParseURLPairUtil.parseURLPair(payOrderDTO);
-            //转发到支付确认页面
-            String url = String.format("forward:/pay-page?openId=%s&%s", openId, params);
-            return url;
-        } catch (Exception e) {
-            e.printStackTrace();
-            return "forward:/pay-page-error";
-        }
-
-
-    }
-
+//
+//    /**
+//     * 授权码回调，申请获取授权码，微信将授权码请求到此地址
+//     * @param code 授权码
+//     * @param state 订单信息
+//     * @return
+//     */
+//    @ApiOperation("微信授权码回调")
+//    @GetMapping("/wx-oauth-code-return")
+//    public String wxOAuth2CodeReturn(@RequestParam String code,@RequestParam String state)  {
+//
+//        String jsonString = EncryptUtil.decodeUTF8StringBase64(state);
+//        PayOrderDTO payOrderDTO = JSON.parseObject(jsonString, PayOrderDTO.class);
+//        //闪聚平台的应用id
+//        String appId = payOrderDTO.getAppId();
+//
+//        //接收到code授权码，申请openid
+//        String openId = transactionService.getWXOAuthOpenId(code, appId);
+//        //将对象的属性和值组成一个url的key/value串
+//        String params = null;
+//        try {
+//            params = ParseURLPairUtil.parseURLPair(payOrderDTO);
+//            //转发到支付确认页面
+//            String url = String.format("forward:/pay-page?openId=%s&%s", openId, params);
+//            return url;
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//            return "forward:/pay-page-error";
+//        }
+//
+//
+//    }
+//
     /**
      * 支付宝的下单接口,前端订单确认页面，点击确认支付，请求进来
      * @param orderConfirmVO 订单信息
@@ -132,25 +134,25 @@ public class PayController {
         response.getWriter().flush();
         response.getWriter().close();
     }
-
-    //微信下单 /wxjspay
-    @ApiOperation("微信门店下单付款")
-    @PostMapping("/wxjspay")
-    public ModelAndView createWXOrderForStore(OrderConfirmVO orderConfirmVO,HttpServletRequest request){
-        PayOrderDTO payOrderDTO = PayOrderConvert.INSTANCE.vo2dto(orderConfirmVO);
-        //应用id
-        String appId = payOrderDTO.getAppId();
-        AppDTO app = appService.getAppById(appId);
-        //商户id
-        payOrderDTO.setMerchantId(app.getMerchantId());
-        //客户端ip
-        payOrderDTO.setClientIp(IPUtil.getIpAddr(request));
-        //将前端输入的元转成分
-        payOrderDTO.setTotalAmount(Integer.parseInt(AmountUtil.changeY2F(orderConfirmVO.getTotalAmount().toString())));
-            //调用submitOrderByWechat
-        Map<String, String> model = transactionService.submitOrderByWechat(payOrderDTO);
-        return new ModelAndView("wxpay",model);
-
-    }
+//
+//    //微信下单 /wxjspay
+//    @ApiOperation("微信门店下单付款")
+//    @PostMapping("/wxjspay")
+//    public ModelAndView createWXOrderForStore(OrderConfirmVO orderConfirmVO,HttpServletRequest request){
+//        PayOrderDTO payOrderDTO = PayOrderConvert.INSTANCE.vo2dto(orderConfirmVO);
+//        //应用id
+//        String appId = payOrderDTO.getAppId();
+//        AppDTO app = appService.getAppById(appId);
+//        //商户id
+//        payOrderDTO.setMerchantId(app.getMerchantId());
+//        //客户端ip
+//        payOrderDTO.setClientIp(IPUtil.getIpAddr(request));
+//        //将前端输入的元转成分
+//        payOrderDTO.setTotalAmount(Integer.parseInt(AmountUtil.changeY2F(orderConfirmVO.getTotalAmount().toString())));
+//            //调用submitOrderByWechat
+//        Map<String, String> model = transactionService.submitOrderByWechat(payOrderDTO);
+//        return new ModelAndView("wxpay",model);
+//
+//    }
 
 }

@@ -62,12 +62,14 @@
       <module name="shanjupay-merchant-api" options="-parameters" />
       <module name="shanjupay-merchant-application" options="-parameters" />
       <module name="shanjupay-merchant-service" options="-parameters" />
+      <module name="shanjupay-payment-agent" options="" />
       <module name="shanjupay-payment-agent-api" options="-parameters -bootclasspath &quot;C:/Program Files/Java/jdk1.8.0_341/jre/lib/rt.jar;C:/Program Files/Java/jdk1.8.0_341/jre/lib/jce.jar&quot;" />
       <module name="shanjupay-payment-agent-service" options="-parameters" />
       <module name="shanjupay-transaction-api" options="-parameters -bootclasspath &quot;C:/Program Files/Java/jdk1.8.0_341/jre/lib/rt.jar;C:/Program Files/Java/jdk1.8.0_341/jre/lib/jce.jar&quot;" />
       <module name="shanjupay-transaction-service" options="-parameters" />
       <module name="shanjupay-uaa-api" options="-parameters -bootclasspath &quot;C:/Program Files/Java/jdk1.8.0_341/jre/lib/rt.jar;C:/Program Files/Java/jdk1.8.0_341/jre/lib/jce.jar&quot;" />
       <module name="shanjupay-uaa-service" options="-parameters" />
+      <module name="shanjupay-user" options="" />
       <module name="shanjupay-user-api" options="-parameters -bootclasspath &quot;C:/Program Files/Java/jdk1.8.0_341/jre/lib/rt.jar;C:/Program Files/Java/jdk1.8.0_341/jre/lib/jce.jar&quot;" />
       <module name="shanjupay-user-service" options="-parameters" />
       <module name="test-freemarker" options="-parameters" />

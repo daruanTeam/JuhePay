@@ -3,7 +3,7 @@ server:
 
 nacos:
   server:
-    addr: 127.0.0.1:8848
+    addr: 101.35.173.253:8848
 
 spring:
   application:
@@ -14,12 +14,12 @@ spring:
     nacos:
       discovery:
         server-addr: ${nacos.server.addr}
-        namespace: f5eec3c1-4f05-40cd-964a-c8d44f342ab4
+        namespace: cd8cfdff-2702-4091-a983-a18bcae8fcd0
         cluster-name: DEFAULT
       config:
         server-addr: ${nacos.server.addr} # 配置中心地址
         file-extension: yaml
-        namespace: f5eec3c1-4f05-40cd-964a-c8d44f342ab4
+        namespace: cd8cfdff-2702-4091-a983-a18bcae8fcd0
         group: SHANJUPAY_GROUP # 聚合支付业务组
         ext-config:
           -
@@ -50,7 +50,7 @@ dubbo:
     name: dubbo
     port: 20896
   registry:
-    address: nacos://127.0.0.1:8848
+    address: nacos://101.35.173.253:8848
   application:
     qos:
       port: 22270 # dubbo qos端口配置  命令行注入

@@ -2,6 +2,8 @@ package com.shanjupay.merchant.service;
 
 import com.shanjupay.common.domain.BusinessException;
 
+import java.io.UnsupportedEncodingException;
+
 /**
  * @author Administrator
  * @version 1.0
@@ -16,4 +18,6 @@ public interface FileService {
      * @throws BusinessException
      */
     public String upload(byte[] bytes,String fileName) throws BusinessException;
+
+    public String getDownUrl(String fileName) throws BusinessException, UnsupportedEncodingException;
 }

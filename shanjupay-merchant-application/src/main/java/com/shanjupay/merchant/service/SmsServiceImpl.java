@@ -82,7 +82,7 @@ public class SmsServiceImpl implements SmsService{
     @Override
     public void checkVerifiyCode(String verifiyKey, String verifiyCode) throws BusinessException {
         //校验验证码的url
-        String url = "http://localhost:56085/sailing/verify?name=sms&verificationCode="+verifiyCode+"&verificationKey="+verifiyKey;
+        String url = "http://101.35.173.253:56085/sailing/verify?name=sms&verificationCode="+verifiyCode+"&verificationKey="+verifiyKey;
 
         Map bodyMap = null;
         try {

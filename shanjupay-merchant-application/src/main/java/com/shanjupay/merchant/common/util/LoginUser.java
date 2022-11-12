@@ -13,4 +13,14 @@ public class LoginUser {
 	private String username;
 	private Long tenantId;
 
+	@Override
+	public String toString() {
+		return "LoginUser{" +
+				"mobile='" + mobile + '\'' +
+				", payload=" + payload +
+				", clientId='" + clientId + '\'' +
+				", username='" + username + '\'' +
+				", tenantId=" + tenantId +
+				'}';
+	}
 }

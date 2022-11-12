@@ -3,7 +3,7 @@ server:
 
 nacos:
   server:
-    addr: 192.168.49.1:8848
+    addr: 101.35.173.253:8848
 
 spring:
   application:
@@ -44,7 +44,8 @@ dubbo:
     name: dubbo
     port: 20880
   registry:
-    address: nacos://192.168.49.1:8848
+    address: nacos://101.35.173.253:884
+
   application:
     qos:
       port: 22230 # dubbo qos端口配置  命令行注入

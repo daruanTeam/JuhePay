@@ -80,4 +80,16 @@ public interface MerchantService {
      * @return
      */
     Boolean queryStoreInMerchant(Long StoreId,Long merchantId);
+
+    /**
+     * 资质申请拒绝
+     * @throws BusinessException
+     */
+    void rejectMerchant(Long merchantId) throws BusinessException;
+
+    /**
+     * 资质申请通过
+     * @throws BusinessException
+     */
+    void agreeMerchant(Long merchantId) throws BusinessException;
 }

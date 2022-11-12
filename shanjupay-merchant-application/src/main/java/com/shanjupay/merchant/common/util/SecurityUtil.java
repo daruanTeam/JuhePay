@@ -18,19 +18,19 @@ import java.util.Map;
  */
 public class SecurityUtil {
 
-	//测试使用
-	public static Long getMerchantId() {
-		HttpServletRequest request = ((ServletRequestAttributes) (RequestContextHolder.currentRequestAttributes()))
-				.getRequest();
-		String jsonToken = request.getHeader("authorization");
-		if (StringUtils.isEmpty(jsonToken) || !jsonToken.startsWith("Bearer ")) {
-			throw new RuntimeException("token is not as expected");
-		}
-		jsonToken = jsonToken.substring(7);
-		jsonToken = EncryptUtil.decodeUTF8StringBase64(jsonToken);
-		JSONObject jsonObject = JSON.parseObject(jsonToken);
-		return jsonObject.getLong("merchantId");
-	}
+//	//测试使用
+//	public static Long getMerchantId() {
+//		HttpServletRequest request = ((ServletRequestAttributes) (RequestContextHolder.currentRequestAttributes()))
+//				.getRequest();
+//		String jsonToken = request.getHeader("authorization");
+//		if (StringUtils.isEmpty(jsonToken) || !jsonToken.startsWith("Bearer ")) {
+//			throw new RuntimeException("token is not as expected");
+//		}
+//		jsonToken = jsonToken.substring(7);
+//		jsonToken = EncryptUtil.decodeUTF8StringBase64(jsonToken);
+//		JSONObject jsonObject = JSON.parseObject(jsonToken);
+//		return jsonObject.getLong("merchantId");
+//	}
 
 	public static LoginUser getUser() {
 		ServletRequestAttributes servletRequestAttributes = (ServletRequestAttributes) RequestContextHolder
@@ -47,7 +47,7 @@ public class SecurityUtil {
 		return new LoginUser();
 	}
 
-/*	public static Long getMerchantId(){
+	public static Long getMerchantId(){
 		MerchantService merchantService = ApplicationContextHelper.getBean(MerchantService.class);
 		MerchantDTO merchant = merchantService.queryMerchantByTenantId(getUser().getTenantId());
 		Long merchantId = null;
@@ -55,7 +55,7 @@ public class SecurityUtil {
 			merchantId = merchant.getId();
 		}
 		return merchantId;
-	}*/
+	}
 
 	/**
 	 * 转换明文jsonToken为用户对象
